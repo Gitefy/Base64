@@ -47,11 +47,17 @@ def subscription_lines(raw):
 def country_from_name(name):
     s=urllib.parse.unquote(str(name or "")).strip()
     u=s.upper()
-    if "🇺🇸" in s or "美国" in s or "美國" in s or "UNITED STATES" in u or "USA" in u or re.search(r"(^|[^A-Z0-9])US([^A-Z0-9]|$)", u):
+    # Use the node's leading country label only. Do not classify by capability
+    # tags such as TK-US / YT-US / SP-US later in the name.
+    if s.startswith("🇺🇸"): return "US"
+    if s.startswith("🇸🇬"): return "SG"
+    if s.startswith("🇯🇵"): return "JP"
+    head=u.split("|",1)[0].strip()
+    if re.match(r"^(US|USA)(?:[_\\-\\s]|$)", head) or re.match(r"^(SEATTLE|LOS ANGELES|SAN JOSE|DALLAS|NEW YORK|CHICAGO|MIAMI)(?:[_\\-\\s]|$)", head):
         return "US"
-    if "🇸🇬" in s or "新加坡" in s or "狮城" in s or "獅城" in s or "SINGAPORE" in u or re.search(r"(^|[^A-Z0-9])SG([^A-Z0-9]|$)", u):
+    if re.match(r"^(SG|SINGAPORE)(?:[_\\-\\s]|$)", head):
         return "SG"
-    if "🇯🇵" in s or "日本" in s or "JAPAN" in u or re.search(r"(^|[^A-Z0-9])JP([^A-Z0-9]|$)", u):
+    if re.match(r"^(JP|JAPAN|TOKYO|OSAKA)(?:[_\\-\\s]|$)", head):
         return "JP"
     return None
 
@@ -130,6 +136,81 @@ def vmess_to_clash(c):
         return p
     except Exception:
         return None
+
+def _q1(q, key, default=""):
+    v=q.get(key)
+    return v[0] if v else default
+
+def uri_to_clash(c):
+    uri=c.get("uri","")
+    try:
+        p=urllib.parse.urlsplit(uri)
+        scheme=p.scheme.lower()
+        q=urllib.parse.parse_qs(p.query,keep_blank_values=True)
+        if scheme=="ss":
+            user=urllib.parse.unquote(p.username or "")
+            try:
+                decoded=b64decode_loose(user).decode("utf-8","ignore")
+            except Exception:
+                decoded=user
+            if ":" not in decoded: return None
+            cipher,password=decoded.split(":",1)
+            return {"name":c["test_name"],"type":"ss","server":p.hostname,"port":p.port,
+                    "cipher":cipher,"password":password,"udp":True}
+
+        if scheme in ("hysteria2","hy2"):
+            auth=urllib.parse.unquote(p.username or "")
+            if p.password is not None:
+                auth += ":" + urllib.parse.unquote(p.password)
+            x={"name":c["test_name"],"type":"hysteria2","server":p.hostname,"port":p.port,
+               "password":auth,"udp":True}
+            sni=_q1(q,"sni") or _q1(q,"peer")
+            if sni: x["sni"]=sni
+            if _q1(q,"insecure") in ("1","true","True") or _q1(q,"allowInsecure") in ("1","true","True"):
+                x["skip-cert-verify"]=True
+            obfs=_q1(q,"obfs")
+            if obfs:
+                x["obfs"]=obfs
+                op=_q1(q,"obfs-password")
+                if op: x["obfs-password"]=op
+            return x
+
+        if scheme=="vless":
+            x={"name":c["test_name"],"type":"vless","server":p.hostname,"port":p.port,
+               "uuid":urllib.parse.unquote(p.username or ""),"udp":True}
+            sec=(_q1(q,"security") or "none").lower()
+            net=(_q1(q,"type") or "tcp").lower()
+            if net in ("ws","grpc","tcp","h2"):
+                x["network"]=net
+            if sec in ("tls","reality"):
+                x["tls"]=True
+                sni=_q1(q,"sni")
+                if sni: x["servername"]=sni
+                if _q1(q,"allowInsecure") in ("1","true","True") or _q1(q,"insecure") in ("1","true","True"):
+                    x["skip-cert-verify"]=True
+            fp=_q1(q,"fp")
+            if fp: x["client-fingerprint"]=fp
+            flow=_q1(q,"flow")
+            if flow: x["flow"]=flow
+            pe=_q1(q,"packetEncoding")
+            if pe: x["packet-encoding"]=pe
+            if sec=="reality":
+                ro={}
+                if _q1(q,"pbk"): ro["public-key"]=_q1(q,"pbk")
+                if _q1(q,"sid"): ro["short-id"]=_q1(q,"sid")
+                if ro: x["reality-opts"]=ro
+            if net=="ws":
+                wo={}
+                if _q1(q,"path"): wo["path"]=_q1(q,"path")
+                if _q1(q,"host"): wo["headers"]={"Host":_q1(q,"host")}
+                if wo: x["ws-opts"]=wo
+            elif net=="grpc":
+                svc=_q1(q,"serviceName") or _q1(q,"path")
+                if svc: x["grpc-opts"]={"grpc-service-name":svc.lstrip("/")}
+            return x
+    except Exception:
+        return None
+    return None
 
 def proxy_indexes(proxies):
     by_exact={}; by_sp={}; by_spt={}; by_name={}
@@ -267,8 +348,8 @@ def main():
     for i,c in enumerate(candidates,1):
         c["test_name"]=f"T{i:04d}"
         p=find_proxy(c,indexes)
-        if p is None and c["scheme"]=="vmess":
-            p=vmess_to_clash(c)
+        if p is None:
+            p=vmess_to_clash(c) if c["scheme"]=="vmess" else uri_to_clash(c)
         if p is None: continue
         p["name"]=c["test_name"]
         c["proxy"]=p
