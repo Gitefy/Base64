@@ -1,0 +1,33 @@
+name: Refresh US SG JP subscription
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/refresh-subscription.yml"
+      - "scripts/refresh_subscription.py"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Fetch, filter and URL-test nodes
+        run: python scripts/refresh_subscription.py
+      - name: Commit refreshed subscription
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add US_SG_JP_subscription_base64.txt US_SG_JP_stats.json
+          git diff --cached --quiet || git commit -m "Refresh US SG JP tested subscription"
+          git push
