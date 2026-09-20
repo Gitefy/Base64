@@ -8,11 +8,12 @@ OUT = Path("US_SG_JP_subscription_base64.txt")
 STATS = Path("US_SG_JP_stats.json")
 QZZ64 = ["https://234.qzz.io/fsllist64", "https://isdo.dpdns.org/fsllist64"]
 QZZYAML = ["https://234.qzz.io/fsllistyaml", "https://isdo.dpdns.org/fsllistyaml"]
+JIKUN_URL = "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3"
 TEST_URL = "https://www.gstatic.com/generate_204"
 SCHEMES = ("vmess://","vless://","trojan://","ss://","ssr://","hysteria2://","hy2://","tuic://","socks://","http://","https://")
 
-def http_get(url, timeout=25):
-    req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0 GitHub-Actions Subscription-Refresh"})
+def http_get(url, timeout=25, user_agent="Mozilla/5.0 GitHub-Actions Subscription-Refresh"):
+    req = urllib.request.Request(url, headers={"User-Agent": user_agent})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
@@ -218,10 +219,30 @@ def main():
     src64,raw64=fetch_first(QZZ64)
     new_lines=subscription_lines(raw64)
     if not new_lines: raise RuntimeError("V2Ray subscription decoded to zero share links")
+
+    jikun_lines=[]
+    try:
+        rawj=http_get(JIKUN_URL, 30, "v2rayN")
+        jikun_lines=subscription_lines(rawj)
+        print("fetched jikun generic", len(rawj), "bytes", len(jikun_lines), "share links")
+    except Exception as e:
+        print("jikun generic fetch failed:", e)
+
     srcy,rawy=fetch_first(QZZYAML)
     y=yaml.safe_load(rawy.decode("utf-8","ignore"))
     proxies=(y or {}).get("proxies",[]) if isinstance(y,dict) else []
     if not proxies: raise RuntimeError("Clash subscription contains no proxies")
+
+    jikun_proxies=[]
+    try:
+        rawjy=http_get(JIKUN_URL, 30, "Clash.Meta")
+        jy=yaml.safe_load(rawjy.decode("utf-8","ignore"))
+        jikun_proxies=(jy or {}).get("proxies",[]) if isinstance(jy,dict) else []
+        print("fetched jikun clash", len(rawjy), "bytes", len(jikun_proxies), "proxies")
+    except Exception as e:
+        print("jikun clash fetch failed:", e)
+
+    proxies = list(proxies) + list(jikun_proxies)
     indexes=proxy_indexes(proxies)
 
     parsed=[]
@@ -230,6 +251,9 @@ def main():
         if x: parsed.append(x)
     for u in new_lines:
         x=parse_uri(u,"qzz")
+        if x: parsed.append(x)
+    for u in jikun_lines:
+        x=parse_uri(u,"jikun")
         if x: parsed.append(x)
 
     dedup={}
@@ -288,8 +312,9 @@ def main():
     plain="\n".join(c["uri"] for c in selected)+"\n"
     OUT.write_text(base64.b64encode(plain.encode()).decode()+"\n",encoding="utf-8")
     stats={
-        "source_v2ray":src64,"source_clash":srcy,
-        "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),
+        "source_v2ray":src64,"source_clash":srcy,"source_jikun":JIKUN_URL,
+        "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),"jikun_source_nodes":len(jikun_lines),
+        "jikun_clash_proxies":len(jikun_proxies),
         "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),"selected":len(selected),
         "usable_by_country":counts,"selected_by_country":{k:sum(1 for x in selected if x["country"]==k) for k in ("US","SG","JP")},
         "quota_if_capped":q,
@@ -303,4 +328,3 @@ def main():
 if __name__=="__main__":
     main()
 
-# trigger refresh workflow
