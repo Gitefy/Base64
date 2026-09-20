@@ -1,0 +1,31 @@
+{
+  "source_v2ray": "https://234.qzz.io/fsllist64",
+  "source_clash": "https://234.qzz.io/fsllistyaml",
+  "previous_github_nodes": 65,
+  "source_nodes": 25,
+  "filtered_unique": 56,
+  "testable": 56,
+  "usable": 15,
+  "selected": 15,
+  "usable_by_country": {
+    "US": 8,
+    "SG": 1,
+    "JP": 6
+  },
+  "selected_by_country": {
+    "US": 8,
+    "SG": 1,
+    "JP": 6
+  },
+  "quota_if_capped": {
+    "US": 8,
+    "SG": 1,
+    "JP": 6
+  },
+  "selected_latency_ms": {
+    "min": 173,
+    "max": 3031,
+    "median": 616
+  },
+  "generated_at_utc": "2026-09-20T06:35:58Z"
+}
