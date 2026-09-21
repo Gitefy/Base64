@@ -2,33 +2,36 @@
   "source_v2ray": "https://234.qzz.io/fsllist64",
   "source_clash": "https://234.qzz.io/fsllistyaml",
   "source_jikun": "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3",
-  "previous_github_nodes": 28,
+  "source_jiji_configured": false,
+  "previous_github_nodes": 7,
   "source_nodes": 23,
   "jikun_source_nodes": 0,
-  "jikun_clash_proxies": 163,
-  "filtered_unique": 12,
-  "testable": 12,
-  "usable": 7,
-  "selected": 7,
+  "jikun_clash_proxies": 133,
+  "jiji_source_nodes": 0,
+  "jiji_clash_proxies": 0,
+  "filtered_unique": 7,
+  "testable": 7,
+  "usable": 5,
+  "selected": 5,
   "usable_by_country": {
-    "US": 4,
-    "SG": 3,
+    "US": 3,
+    "SG": 2,
     "JP": 0
   },
   "selected_by_country": {
-    "US": 4,
-    "SG": 3,
+    "US": 3,
+    "SG": 2,
     "JP": 0
   },
   "quota_if_capped": {
-    "US": 4,
-    "SG": 3,
+    "US": 3,
+    "SG": 2,
     "JP": 0
   },
   "selected_latency_ms": {
-    "min": 297,
-    "max": 3784,
-    "median": 897
+    "min": 384,
+    "max": 2748,
+    "median": 738
   },
-  "generated_at_utc": "2026-09-20T09:47:46Z"
+  "generated_at_utc": "2026-09-21T00:16:45Z"
 }
