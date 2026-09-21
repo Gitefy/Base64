@@ -10,6 +10,9 @@ QZZ64 = ["https://234.qzz.io/fsllist64", "https://isdo.dpdns.org/fsllist64"]
 QZZYAML = ["https://234.qzz.io/fsllistyaml", "https://isdo.dpdns.org/fsllistyaml"]
 JIKUN_URL = "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3"
 JIJI_URL = "https://b.545437.xyz/jiji?token=05c7f843a5cc4c57383fb5085a57aa33"
+MANUAL_SEEDS = [
+    "vless://e2632874-614e-4261-af62-52aca3358e4e@173.234.14.105:59615?encryption=none&flow=xtls-rprx-vision&security=reality&sni=biosmod.partners.nvidia.com&fp=chrome&pbk=7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M&sid=6b&spx=%2F7200b0b923f69f9&type=tcp&headerType=none#Singapore-vpn"
+]
 TEST_URL = "https://www.gstatic.com/generate_204"
 SCHEMES = ("vmess://","vless://","trojan://","ss://","ssr://","hysteria2://","hy2://","tuic://","socks://","http://","https://")
 
@@ -347,6 +350,9 @@ def main():
     indexes=proxy_indexes(proxies)
 
     parsed=[]
+    for u in MANUAL_SEEDS:
+        x=parse_uri(u,"manual")
+        if x: parsed.append(x)
     for u in old_lines:
         x=parse_uri(u,"github")
         if x: parsed.append(x)
@@ -417,7 +423,7 @@ def main():
     OUT.write_text(base64.b64encode(plain.encode()).decode()+"\n",encoding="utf-8")
     stats={
         "source_v2ray":src64,"source_clash":srcy,"source_jikun":JIKUN_URL,
-        "source_jiji_configured":bool(JIJI_URL),
+        "source_jiji_configured":bool(JIJI_URL),"manual_seed_nodes":len(MANUAL_SEEDS),
         "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),"jikun_source_nodes":len(jikun_lines),
         "jikun_clash_proxies":len(jikun_proxies),"jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
         "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),"selected":len(selected),
