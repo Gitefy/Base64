@@ -3,35 +3,36 @@
   "source_clash": "https://234.qzz.io/fsllistyaml",
   "source_jikun": "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3",
   "source_jiji_configured": true,
-  "previous_github_nodes": 5,
+  "manual_seed_nodes": 1,
+  "previous_github_nodes": 19,
   "source_nodes": 23,
-  "jikun_source_nodes": 0,
-  "jikun_clash_proxies": 133,
+  "jikun_source_nodes": 3,
+  "jikun_clash_proxies": 0,
   "jiji_source_nodes": 39,
   "jiji_clash_proxies": 39,
-  "filtered_unique": 24,
-  "testable": 24,
-  "usable": 19,
-  "selected": 19,
+  "filtered_unique": 26,
+  "testable": 26,
+  "usable": 20,
+  "selected": 20,
   "usable_by_country": {
     "US": 12,
     "SG": 4,
-    "JP": 3
+    "JP": 4
   },
   "selected_by_country": {
     "US": 12,
     "SG": 4,
-    "JP": 3
+    "JP": 4
   },
   "quota_if_capped": {
     "US": 12,
     "SG": 4,
-    "JP": 3
+    "JP": 4
   },
   "selected_latency_ms": {
-    "min": 383,
-    "max": 4056,
-    "median": 760
+    "min": 285,
+    "max": 5120,
+    "median": 791
   },
-  "generated_at_utc": "2026-09-21T00:18:10Z"
+  "generated_at_utc": "2026-09-21T12:27:52Z"
 }
