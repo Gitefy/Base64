@@ -9,6 +9,7 @@ STATS = Path("US_SG_JP_stats.json")
 QZZ64 = ["https://234.qzz.io/fsllist64", "https://isdo.dpdns.org/fsllist64"]
 QZZYAML = ["https://234.qzz.io/fsllistyaml", "https://isdo.dpdns.org/fsllistyaml"]
 JIKUN_URL = "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3"
+JIJI_URL = os.environ.get("JIJI_SUB_URL", "").strip()
 TEST_URL = "https://www.gstatic.com/generate_204"
 SCHEMES = ("vmess://","vless://","trojan://","ss://","ssr://","hysteria2://","hy2://","tuic://","socks://","http://","https://")
 
@@ -309,6 +310,15 @@ def main():
     except Exception as e:
         print("jikun generic fetch failed:", e)
 
+    jiji_lines=[]
+    if JIJI_URL:
+        try:
+            rawjj=http_get(JIJI_URL, 30, "v2rayN")
+            jiji_lines=subscription_lines(rawjj)
+            print("fetched jiji generic", len(rawjj), "bytes", len(jiji_lines), "share links")
+        except Exception as e:
+            print("jiji generic fetch failed:", e)
+
     srcy,rawy=fetch_first(QZZYAML)
     y=yaml.safe_load(rawy.decode("utf-8","ignore"))
     proxies=(y or {}).get("proxies",[]) if isinstance(y,dict) else []
@@ -323,7 +333,17 @@ def main():
     except Exception as e:
         print("jikun clash fetch failed:", e)
 
-    proxies = list(proxies) + list(jikun_proxies)
+    jiji_proxies=[]
+    if JIJI_URL:
+        try:
+            rawjjy=http_get(JIJI_URL, 30, "Clash.Meta")
+            jjy=yaml.safe_load(rawjjy.decode("utf-8","ignore"))
+            jiji_proxies=(jjy or {}).get("proxies",[]) if isinstance(jjy,dict) else []
+            print("fetched jiji clash", len(rawjjy), "bytes", len(jiji_proxies), "proxies")
+        except Exception as e:
+            print("jiji clash fetch failed:", e)
+
+    proxies = list(proxies) + list(jikun_proxies) + list(jiji_proxies)
     indexes=proxy_indexes(proxies)
 
     parsed=[]
@@ -335,6 +355,9 @@ def main():
         if x: parsed.append(x)
     for u in jikun_lines:
         x=parse_uri(u,"jikun")
+        if x: parsed.append(x)
+    for u in jiji_lines:
+        x=parse_uri(u,"jiji")
         if x: parsed.append(x)
 
     dedup={}
@@ -394,8 +417,9 @@ def main():
     OUT.write_text(base64.b64encode(plain.encode()).decode()+"\n",encoding="utf-8")
     stats={
         "source_v2ray":src64,"source_clash":srcy,"source_jikun":JIKUN_URL,
+        "source_jiji_configured":bool(JIJI_URL),
         "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),"jikun_source_nodes":len(jikun_lines),
-        "jikun_clash_proxies":len(jikun_proxies),
+        "jikun_clash_proxies":len(jikun_proxies),"jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
         "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),"selected":len(selected),
         "usable_by_country":counts,"selected_by_country":{k:sum(1 for x in selected if x["country"]==k) for k in ("US","SG","JP")},
         "quota_if_capped":q,
