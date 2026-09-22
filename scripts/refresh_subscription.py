@@ -13,10 +13,19 @@ JIJI_URL = "https://b.545437.xyz/jiji?token=05c7f843a5cc4c57383fb5085a57aa33"
 MANUAL_SEEDS = [
     "vless://e2632874-614e-4261-af62-52aca3358e4e@173.234.14.105:59615?encryption=none&flow=xtls-rprx-vision&security=reality&sni=biosmod.partners.nvidia.com&fp=chrome&pbk=7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M&sid=6b&spx=%2F7200b0b923f69f9&type=tcp&headerType=none#Singapore-vpn"
 ]
-TEST_URL = "https://www.gstatic.com/generate_204"
-STRICT_TEST_ROUNDS = 2
-MAX_DELAY_MS = 1500
-TEST_TIMEOUT_MS = 3000
+TEST_URLS = [
+    "https://www.gstatic.com/generate_204",
+    "https://cp.cloudflare.com/generate_204",
+]
+STRICT_TEST_ROUNDS = 3
+REQUIRED_SUCCESS_ROUNDS = 2
+MAX_DELAY_MS = 3000
+TEST_TIMEOUT_MS = 5000
+PROBE_BINARY = Path("/opt/china-probe/mihomo")
+PROBE_BASE_CONFIG = Path("/opt/china-probe/config.yaml")
+PROBE_ROUTING_MARK = 524288
+PROBE_MIXED_PORT = 17891
+PROBE_CONTROLLER_PORT = 19091
 SCHEMES = ("vmess://","vless://","trojan://","ss://","ssr://","hysteria2://","hy2://","tuic://","socks://","http://","https://")
 
 def http_get(url, timeout=25, user_agent="Mozilla/5.0 GitHub-Actions Subscription-Refresh"):
@@ -264,27 +273,47 @@ def download_mihomo():
 def controller_ready():
     for _ in range(50):
         try:
-            http_get("http://127.0.0.1:9090/version",2); return True
+            http_get(f"http://127.0.0.1:{PROBE_CONTROLLER_PORT}/version",2); return True
         except Exception: time.sleep(.2)
     return False
 
 def delay_one(c):
     name=urllib.parse.quote(c["test_name"],safe="")
-    test=urllib.parse.quote(TEST_URL,safe="")
-    delays=[]
+    successful_rounds=[]
+    c["round_results"]=[]
+    last_round_ok=False
+
     for round_no in range(STRICT_TEST_ROUNDS):
-        url=f"http://127.0.0.1:9090/proxies/{name}/delay?timeout={TEST_TIMEOUT_MS}&url={test}"
-        try:
-            data=json.loads(http_get(url,TEST_TIMEOUT_MS/1000+2).decode())
-            d=int(data.get("delay",0) or 0)
-        except Exception:
-            return None
-        if d <= 0 or d > MAX_DELAY_MS:
-            return None
-        delays.append(d)
+        round_delays=[]
+        round_ok=True
+        for test_url in TEST_URLS:
+            test=urllib.parse.quote(test_url,safe="")
+            url=f"http://127.0.0.1:{PROBE_CONTROLLER_PORT}/proxies/{name}/delay?timeout={TEST_TIMEOUT_MS}&url={test}"
+            try:
+                data=json.loads(http_get(url,TEST_TIMEOUT_MS/1000+2).decode())
+                d=int(data.get("delay",0) or 0)
+            except Exception:
+                round_ok=False
+                break
+            if d <= 0 or d > MAX_DELAY_MS:
+                round_ok=False
+                break
+            round_delays.append(d)
+
+        last_round_ok=round_ok
+        if round_ok:
+            avg=round(sum(round_delays)/len(round_delays))
+            successful_rounds.append(avg)
+            c["round_results"].append(avg)
+        else:
+            c["round_results"].append(None)
+
         if round_no + 1 < STRICT_TEST_ROUNDS:
             time.sleep(0.4)
-    return round(sum(delays)/len(delays))
+
+    if len(successful_rounds) < REQUIRED_SUCCESS_ROUNDS or not last_round_ok:
+        return None
+    return round(sum(successful_rounds)/len(successful_rounds))
 
 def quotas(counts,total_keep):
     total=sum(counts.values())
@@ -393,17 +422,69 @@ def main():
         testable.append(c)
     if not testable: raise RuntimeError("no testable candidates")
 
-    cfg={"mixed-port":7890,"allow-lan":False,"mode":"global","log-level":"silent",
-         "external-controller":"127.0.0.1:9090",
-         "proxies":[c["proxy"] for c in testable],
-         "proxy-groups":[{"name":"TEST","type":"select","proxies":[c["test_name"] for c in testable]}],
-         "rules":["MATCH,TEST"]}
-    Path("test_config.yaml").write_text(yaml.safe_dump(cfg,allow_unicode=True,sort_keys=False),encoding="utf-8")
-    download_mihomo()
-    proc=subprocess.Popen(["./mihomo","-f","test_config.yaml"],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+    if not PROBE_BINARY.exists():
+        raise RuntimeError(f"China probe binary missing: {PROBE_BINARY}")
+    if not PROBE_BASE_CONFIG.exists():
+        raise RuntimeError(f"China probe base config missing: {PROBE_BASE_CONFIG}")
+
+    route_check=subprocess.run(
+        ["ip","route","get","1.1.1.1","mark","0x80000"],
+        capture_output=True,text=True,timeout=5
+    )
+    route_text=(route_check.stdout or "") + (route_check.stderr or "")
+    if route_check.returncode != 0 or "dev eth0" not in route_text:
+        raise RuntimeError("China probe route gate failed: " + route_text.strip())
+    print("china probe route gate:", route_text.strip())
+
+    base_cfg=yaml.safe_load(PROBE_BASE_CONFIG.read_text(encoding="utf-8")) or {}
+    if not isinstance(base_cfg,dict):
+        raise RuntimeError("China probe base config is not a YAML mapping")
+    cfg=copy.deepcopy(base_cfg)
+
+    # Avoid colliding with the always-on baseline china-probe.service.
+    for key in ("port","socks-port","redir-port","tproxy-port"):
+        cfg.pop(key,None)
+    cfg["mixed-port"]=PROBE_MIXED_PORT
+    cfg["allow-lan"]=False
+    cfg["mode"]="global"
+    cfg["log-level"]="silent"
+    cfg["external-controller"]=f"127.0.0.1:{PROBE_CONTROLLER_PORT}"
+    cfg["secret"]=""
+    cfg["routing-mark"]=PROBE_ROUTING_MARK
+    cfg["tun"]={"enable":False}
+    if isinstance(cfg.get("dns"),dict):
+        # Keep the independently configured redir-host resolvers, but do not
+        # bind a second DNS listener that could collide with the baseline service.
+        cfg["dns"].pop("listen",None)
+    cfg["proxies"]=[c["proxy"] for c in testable]
+    cfg["proxy-groups"]=[{"name":"TEST","type":"select","proxies":[c["test_name"] for c in testable]}]
+    cfg["rules"]=["MATCH,TEST"]
+
+    cfg_path=Path("test_config_china.yaml")
+    runtime_dir=Path(".china-probe-actions-runtime")
+    runtime_dir.mkdir(exist_ok=True)
+    cfg_path.write_text(yaml.safe_dump(cfg,allow_unicode=True,sort_keys=False),encoding="utf-8")
+
+    child_env=os.environ.copy()
+    for key in ("HTTP_PROXY","HTTPS_PROXY","ALL_PROXY","http_proxy","https_proxy","all_proxy"):
+        child_env.pop(key,None)
+
+    log_path=Path("china_probe_test.log")
+    log_fh=log_path.open("w",encoding="utf-8")
+    proc=subprocess.Popen(
+        [str(PROBE_BINARY),"-d",str(runtime_dir),"-f",str(cfg_path)],
+        stdout=log_fh,stderr=subprocess.STDOUT,env=child_env
+    )
     try:
-        if not controller_ready(): raise RuntimeError("mihomo controller did not start")
-        with concurrent.futures.ThreadPoolExecutor(max_workers=16) as ex:
+        if not controller_ready():
+            log_fh.flush()
+            tail=""
+            try:
+                tail="\n".join(log_path.read_text(encoding="utf-8",errors="ignore").splitlines()[-40:])
+            except Exception:
+                pass
+            raise RuntimeError("China probe controller did not start. Log tail:\n" + tail)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=12) as ex:
             fut={ex.submit(delay_one,c):c for c in testable}
             for f in concurrent.futures.as_completed(fut):
                 c=fut[f]; c["delay"]=f.result()
@@ -411,6 +492,7 @@ def main():
         proc.terminate()
         try: proc.wait(5)
         except: proc.kill()
+        log_fh.close()
 
     usable=[c for c in testable if c.get("delay")]
     usable.sort(key=lambda x:x["delay"])
@@ -454,7 +536,11 @@ def main():
         "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),"jikun_source_nodes":len(jikun_lines),
         "jikun_clash_proxies":len(jikun_proxies),"jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
         "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),"selected":len(selected),
-        "strict_test_rounds":STRICT_TEST_ROUNDS,"max_delay_ms":MAX_DELAY_MS,
+        "test_location":"china-vps-self-hosted",
+        "probe_binary":str(PROBE_BINARY),"probe_routing_mark":PROBE_ROUTING_MARK,
+        "probe_route_interface":"eth0","probe_controller_port":PROBE_CONTROLLER_PORT,
+        "test_urls":TEST_URLS,"strict_test_rounds":STRICT_TEST_ROUNDS,
+        "required_success_rounds":REQUIRED_SUCCESS_ROUNDS,"max_delay_ms":MAX_DELAY_MS,
         "endpoint_duplicates_removed":endpoint_duplicates_removed,
         "usable_by_country":counts,"selected_by_country":{k:sum(1 for x in selected if x["country"]==k) for k in ("US","SG","JP")},
         "quota_if_capped":q,
