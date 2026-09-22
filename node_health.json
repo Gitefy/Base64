@@ -3,9 +3,9 @@
   "nodes": {
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
-      "fail_streak": 2,
+      "fail_streak": 3,
       "last_pass_utc": "2026-09-22T03:26:40Z",
-      "last_fail_utc": "2026-09-22T06:54:47Z"
+      "last_fail_utc": "2026-09-22T11:17:30Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -137,9 +137,9 @@
     },
     "https://fan.226278.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-09-22T06:47:40Z",
-      "last_fail_utc": "2026-09-22T06:54:47Z"
+      "last_fail_utc": "2026-09-22T11:17:30Z"
     },
     "https://null:null@jewelscollecti.icu:443?sni=jewelscollecti.icu": {
       "ever_passed": false,
@@ -156,7 +156,36 @@
     "vless://550d6eb0-1775-44a4-a464-9176e3d74b50@172.67.130.159:2096?fp=chrome&host=cdn-us.skyvora.app&path=%2F0i027asku&security=tls&sni=cdn-us.skyvora.app&type=ws": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-09-22T06:54:47Z"
+      "last_pass_utc": "2026-09-22T11:17:30Z"
+    },
+    "vless://d1d7bf3a-54fc-44ed-9b26-c490040da4e0@18.143.107.150:31595/?encryption=none&flow=xtls-rprx-vision&fp=chrome&packetEncoding=xudp&pbk=tD3AhfD8PM3OVLdRU0eT6fdtrWHeQq1xRtD7vuNrTBE&security=reality&sid=d916930ac360b701&sni=www.amd.com&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://138.199.35.210:9002?allowInsecure=1&sni=138.199.35.210": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://138.199.35.217:9002?allowInsecure=1&sni=138.199.35.217": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:null@voteshirleysew.club:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:null@carolinafreigh.fun:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:null@138.199.35.195:9002?allowInsecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:None@138.199.35.217:9002?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-09-22T11:17:30Z"
     }
   }
 }
