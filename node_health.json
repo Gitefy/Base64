@@ -3,9 +3,9 @@
   "nodes": {
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
-      "fail_streak": 3,
+      "fail_streak": 4,
       "last_pass_utc": "2026-09-22T03:26:40Z",
-      "last_fail_utc": "2026-09-22T11:17:30Z"
+      "last_fail_utc": "2026-09-22T11:27:03Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -155,8 +155,9 @@
     },
     "vless://550d6eb0-1775-44a4-a464-9176e3d74b50@172.67.130.159:2096?fp=chrome&host=cdn-us.skyvora.app&path=%2F0i027asku&security=tls&sni=cdn-us.skyvora.app&type=ws": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-09-22T11:17:30Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-09-22T11:17:30Z",
+      "last_fail_utc": "2026-09-22T11:27:03Z"
     },
     "vless://d1d7bf3a-54fc-44ed-9b26-c490040da4e0@18.143.107.150:31595/?encryption=none&flow=xtls-rprx-vision&fp=chrome&packetEncoding=xudp&pbk=tD3AhfD8PM3OVLdRU0eT6fdtrWHeQq1xRtD7vuNrTBE&security=reality&sid=d916930ac360b701&sni=www.amd.com&type=tcp": {
       "ever_passed": false,
@@ -184,8 +185,268 @@
     },
     "https://null:None@138.199.35.217:9002?allowInsecure=1": {
       "ever_passed": true,
+      "fail_streak": 1,
+      "last_pass_utc": "2026-09-22T11:17:30Z",
+      "last_fail_utc": "2026-09-22T11:27:03Z"
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP1.abyssvpn.com:31104?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP1.abyssvpn.com:31157?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP1.abyssvpn.com:31158?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP1.abyssvpn.com:31181?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP1.abyssvpn.com:31182?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP1.abyssvpn.com:31183?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP1.abyssvpn.com:31184?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP2.abyssvpn.com:31104?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP2.abyssvpn.com:31157?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP2.abyssvpn.com:31158?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP2.abyssvpn.com:31181?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP2.abyssvpn.com:31182?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP2.abyssvpn.com:31183?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP2.abyssvpn.com:31184?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP3.abyssvpn.com:31104?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP3.abyssvpn.com:31157?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP3.abyssvpn.com:31158?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP3.abyssvpn.com:31181?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP3.abyssvpn.com:31182?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP3.abyssvpn.com:31183?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP3.abyssvpn.com:31184?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP4.abyssvpn.com:31104?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP4.abyssvpn.com:31157?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP4.abyssvpn.com:31158?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP4.abyssvpn.com:31181?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP4.abyssvpn.com:31182?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP4.abyssvpn.com:31183?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP4.abyssvpn.com:31184?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP5.abyssvpn.com:31104?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP5.abyssvpn.com:31157?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP5.abyssvpn.com:31158?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP5.abyssvpn.com:31181?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP5.abyssvpn.com:31182?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP5.abyssvpn.com:31183?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP5.abyssvpn.com:31184?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP6.abyssvpn.com:31104?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP6.abyssvpn.com:31157?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP6.abyssvpn.com:31158?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP6.abyssvpn.com:31181?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP6.abyssvpn.com:31182?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP6.abyssvpn.com:31183?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP6.abyssvpn.com:31184?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP7.abyssvpn.com:31104?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP7.abyssvpn.com:31157?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP7.abyssvpn.com:31158?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP7.abyssvpn.com:31181?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP7.abyssvpn.com:31182?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP7.abyssvpn.com:31183?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP7.abyssvpn.com:31184?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP8.abyssvpn.com:31104?insecure=1": {
+      "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-09-22T11:17:30Z"
+      "last_pass_utc": "2026-09-22T11:27:03Z"
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP8.abyssvpn.com:31157?insecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-09-22T11:27:03Z"
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP8.abyssvpn.com:31158?insecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-09-22T11:27:03Z"
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP8.abyssvpn.com:31181?insecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-09-22T11:27:03Z"
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP8.abyssvpn.com:31182?insecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-09-22T11:27:03Z"
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP8.abyssvpn.com:31183?insecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-09-22T11:27:03Z"
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP8.abyssvpn.com:31184?insecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-09-22T11:27:03Z"
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP9.abyssvpn.com:31104?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP9.abyssvpn.com:31157?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP9.abyssvpn.com:31158?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP9.abyssvpn.com:31181?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP9.abyssvpn.com:31182?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP9.abyssvpn.com:31183?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP9.abyssvpn.com:31184?insecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
     }
   }
 }
