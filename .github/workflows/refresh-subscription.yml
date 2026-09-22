@@ -46,6 +46,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config http.proxy "http://127.0.0.1:7890"
+          git config https.proxy "http://127.0.0.1:7890"
           git add US_SG_JP_subscription_base64.txt US_SG_JP_stats.json
           git diff --cached --quiet || git commit -m "Refresh China-tested US SG JP subscription"
-          git push
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "git push failed (attempt $attempt/3); retrying..."
+            sleep $((attempt * 3))
+          done
+          exit 1
