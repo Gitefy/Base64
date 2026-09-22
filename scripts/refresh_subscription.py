@@ -24,7 +24,8 @@ MANUAL_SEEDS = [
     "vless://e2632874-614e-4261-af62-52aca3358e4e@173.234.14.105:59615?encryption=none&flow=xtls-rprx-vision&security=reality&sni=biosmod.partners.nvidia.com&fp=chrome&pbk=7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M&sid=6b&spx=%2F7200b0b923f69f9&type=tcp&headerType=none#Singapore-vpn",
     # Previously China-verified SG node; keep it in the candidate pool so a
     # single transient UDP/dual-target failure cannot make it disappear forever.
-    "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165#%F0%9F%87%B8%F0%9F%87%ACSG_113%7C1.2MB%2Fs%7C0%25%7CTK-SG%7CYT-CN%7CNF-SG%7CGPT%E2%81%BA-SG%7CCL-SG%7CSP-SG"
+    "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165#%F0%9F%87%B8%F0%9F%87%ACSG_113%7C1.2MB%2Fs%7C0%25%7CTK-SG%7CYT-CN%7CNF-SG%7CGPT%E2%81%BA-SG%7CCL-SG%7CSP-SG",
+    "vless://d1d7bf3a-54fc-44ed-9b26-c490040da4e0@18.143.107.150:31595/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.amd.com&fp=chrome&security=reality&pbk=tD3AhfD8PM3OVLdRU0eT6fdtrWHeQq1xRtD7vuNrTBE&sid=d916930ac360b701&packetEncoding=xudp#%20aws%20sg"
 ]
 TEST_URLS = [
     "https://www.gstatic.com/generate_204",
