@@ -10,6 +10,7 @@ QZZ64 = ["https://234.qzz.io/fsllist64", "https://isdo.dpdns.org/fsllist64"]
 QZZYAML = ["https://234.qzz.io/fsllistyaml", "https://isdo.dpdns.org/fsllistyaml"]
 JIKUN_URL = "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3"
 JIJI_URL = "https://b.545437.xyz/jiji?token=05c7f843a5cc4c57383fb5085a57aa33"
+MITCE_URL = "https://app.mitce.net/?sid=532469&token=fec41d1627b2a7ae5207"
 MANUAL_SEEDS = [
     "vless://e2632874-614e-4261-af62-52aca3358e4e@173.234.14.105:59615?encryption=none&flow=xtls-rprx-vision&security=reality&sni=biosmod.partners.nvidia.com&fp=chrome&pbk=7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M&sid=6b&spx=%2F7200b0b923f69f9&type=tcp&headerType=none#Singapore-vpn"
 ]
@@ -74,6 +75,13 @@ def country_from_name(name):
     if re.match(r"^(SG|SINGAPORE)(?:[_\\-\\s]|$)", head):
         return "SG"
     if re.match(r"^(JP|JAPAN|TOKYO|OSAKA)(?:[_\\-\\s]|$)", head):
+        return "JP"
+    # Common Chinese labels used by subscription providers.
+    if re.match(r"^(美国|洛杉矶|西雅图|圣何塞|达拉斯|纽约|芝加哥|迈阿密)(?:[_\\-\\s丨|]|$)", s):
+        return "US"
+    if re.match(r"^(新加坡|狮城)(?:[_\\-\\s丨|]|$)", s):
+        return "SG"
+    if re.match(r"^(日本|东京|大阪)(?:[_\\-\\s丨|]|$)", s):
         return "JP"
     return None
 
@@ -359,6 +367,15 @@ def main():
         except Exception as e:
             print("jiji generic fetch failed:", e)
 
+    mitce_lines=[]
+    if MITCE_URL:
+        try:
+            rawm=http_get(MITCE_URL, 30, "v2rayN")
+            mitce_lines=subscription_lines(rawm)
+            print("fetched mitce generic", len(rawm), "bytes", len(mitce_lines), "share links")
+        except Exception as e:
+            print("mitce generic fetch failed:", e)
+
     srcy,rawy=fetch_first(QZZYAML)
     y=yaml.safe_load(rawy.decode("utf-8","ignore"))
     proxies=(y or {}).get("proxies",[]) if isinstance(y,dict) else []
@@ -383,7 +400,17 @@ def main():
         except Exception as e:
             print("jiji clash fetch failed:", e)
 
-    proxies = list(proxies) + list(jikun_proxies) + list(jiji_proxies)
+    mitce_proxies=[]
+    if MITCE_URL:
+        try:
+            rawmy=http_get(MITCE_URL, 30, "Clash.Meta")
+            my=yaml.safe_load(rawmy.decode("utf-8","ignore"))
+            mitce_proxies=(my or {}).get("proxies",[]) if isinstance(my,dict) else []
+            print("fetched mitce clash", len(rawmy), "bytes", len(mitce_proxies), "proxies")
+        except Exception as e:
+            print("mitce clash fetch failed:", e)
+
+    proxies = list(proxies) + list(jikun_proxies) + list(jiji_proxies) + list(mitce_proxies)
     indexes=proxy_indexes(proxies)
 
     parsed=[]
@@ -401,6 +428,10 @@ def main():
         if x: parsed.append(x)
     for u in jiji_lines:
         x=parse_uri(u,"jiji")
+        if x: parsed.append(x)
+
+    for u in mitce_lines:
+        x=parse_uri(u,"mitce")
         if x: parsed.append(x)
 
     dedup={}
@@ -532,9 +563,11 @@ def main():
     OUT.write_text(base64.b64encode(plain.encode()).decode()+"\n",encoding="utf-8")
     stats={
         "source_v2ray":src64,"source_clash":srcy,"source_jikun":JIKUN_URL,
-        "source_jiji_configured":bool(JIJI_URL),"manual_seed_nodes":len(MANUAL_SEEDS),
+        "source_jiji_configured":bool(JIJI_URL),"source_mitce_configured":bool(MITCE_URL),
+        "manual_seed_nodes":len(MANUAL_SEEDS),
         "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),"jikun_source_nodes":len(jikun_lines),
         "jikun_clash_proxies":len(jikun_proxies),"jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
+        "mitce_source_nodes":len(mitce_lines),"mitce_clash_proxies":len(mitce_proxies),
         "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),"selected":len(selected),
         "test_location":"china-vps-self-hosted",
         "probe_binary":str(PROBE_BINARY),"probe_routing_mark":PROBE_ROUTING_MARK,
