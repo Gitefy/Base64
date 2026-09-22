@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "sources": {
+    "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3": {
+      "name": "jikun",
+      "retired_at_utc": "2026-09-22T06:54:47Z",
+      "reason": "no_us_sg_jp_candidates",
+      "node_keys": []
+    },
+    "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3": {
+      "name": "jikun-extra",
+      "retired_at_utc": "2026-09-22T06:54:47Z",
+      "reason": "no_us_sg_jp_candidates",
+      "node_keys": []
+    },
+    "https://b.545437.xyz/jiji?token=05c7f843a5cc4c57383fb5085a57aa33": {
+      "name": "jiji",
+      "retired_at_utc": "2026-09-22T06:54:47Z",
+      "reason": "permanent_http_failure",
+      "node_keys": []
+    },
+    "https://app.mitce.net/?sid=532469&token=fec41d1627b2a7ae5207": {
+      "name": "mitce",
+      "retired_at_utc": "2026-09-22T06:54:47Z",
+      "reason": "zero_strict_usable_nodes",
+      "node_keys": [
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp1-r.link-t7.com:10031?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp2-r.link-t7.com:10032?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp3-r.link-t7.com:10033?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp4-r.link-t7.com:10034?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp5-r.link-t7.com:10035?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp6-r.link-t7.com:10036?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg1-r.link-t7.com:10036?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg3-r.link-t7.com:10038?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=d1.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg4-r.link-t7.com:10039?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=d1.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg5-r.link-t7.com:10040?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=d1.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us1-r.link-t7.com:10238?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us2-r.link-t7.com:10239?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us3-r.link-t7.com:10240?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us4-r.link-t7.com:10241?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us5-r.link-t7.com:10242?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us6-r.link-t7.com:10243?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us7-r.link-t7.com:10244?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc",
+        "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us8-r.link-t7.com:10245?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc"
+      ]
+    }
+  }
+}

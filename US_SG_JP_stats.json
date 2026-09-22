@@ -5,8 +5,32 @@
   "source_jikun_extra": "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3",
   "source_jiji_configured": true,
   "source_mitce_configured": true,
+  "short_lived_source_policy": "retire when permanent HTTP failure, no target candidates, or zero strict usable nodes",
+  "retired_sources_count": 4,
+  "retired_this_run": [
+    {
+      "name": "jikun",
+      "url": "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3",
+      "reason": "no_us_sg_jp_candidates"
+    },
+    {
+      "name": "jikun-extra",
+      "url": "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3",
+      "reason": "no_us_sg_jp_candidates"
+    },
+    {
+      "name": "jiji",
+      "url": "https://b.545437.xyz/jiji?token=05c7f843a5cc4c57383fb5085a57aa33",
+      "reason": "permanent_http_failure"
+    },
+    {
+      "name": "mitce",
+      "url": "https://app.mitce.net/?sid=532469&token=fec41d1627b2a7ae5207",
+      "reason": "zero_strict_usable_nodes"
+    }
+  ],
   "manual_seed_nodes": 2,
-  "previous_github_nodes": 7,
+  "previous_github_nodes": 5,
   "source_nodes": 20,
   "jikun_source_nodes": 3,
   "jikun_clash_proxies": 0,
@@ -18,10 +42,10 @@
   "mitce_clash_proxies": 0,
   "filtered_unique": 28,
   "testable": 27,
-  "usable": 2,
-  "strict_selected": 2,
-  "grace_retained": 3,
-  "selected": 5,
+  "usable": 1,
+  "strict_selected": 1,
+  "grace_retained": 1,
+  "selected": 2,
   "test_location": "china-vps-self-hosted",
   "probe_binary": "/opt/china-probe/mihomo",
   "probe_routing_mark": 524288,
@@ -37,34 +61,34 @@
   "max_delay_ms": 3000,
   "endpoint_duplicates_removed": 0,
   "usable_by_country": {
-    "US": 2,
+    "US": 1,
     "SG": 0,
     "JP": 0
   },
   "strict_selected_by_country": {
-    "US": 2,
+    "US": 1,
     "SG": 0,
     "JP": 0
   },
   "grace_retained_by_country": {
-    "US": 0,
-    "SG": 1,
-    "JP": 2
+    "US": 1,
+    "SG": 0,
+    "JP": 0
   },
   "selected_by_country": {
-    "US": 2,
-    "SG": 1,
-    "JP": 2
-  },
-  "quota_if_capped": {
     "US": 2,
     "SG": 0,
     "JP": 0
   },
-  "selected_latency_ms": {
-    "min": 988,
-    "max": 2175,
-    "median": 2175
+  "quota_if_capped": {
+    "US": 1,
+    "SG": 0,
+    "JP": 0
   },
-  "generated_at_utc": "2026-09-22T06:47:40Z"
+  "selected_latency_ms": {
+    "min": 2172,
+    "max": 2172,
+    "median": 2172
+  },
+  "generated_at_utc": "2026-09-22T06:54:47Z"
 }
