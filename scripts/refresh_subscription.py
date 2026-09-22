@@ -14,6 +14,9 @@ MANUAL_SEEDS = [
     "vless://e2632874-614e-4261-af62-52aca3358e4e@173.234.14.105:59615?encryption=none&flow=xtls-rprx-vision&security=reality&sni=biosmod.partners.nvidia.com&fp=chrome&pbk=7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M&sid=6b&spx=%2F7200b0b923f69f9&type=tcp&headerType=none#Singapore-vpn"
 ]
 TEST_URL = "https://www.gstatic.com/generate_204"
+STRICT_TEST_ROUNDS = 2
+MAX_DELAY_MS = 1500
+TEST_TIMEOUT_MS = 3000
 SCHEMES = ("vmess://","vless://","trojan://","ss://","ssr://","hysteria2://","hy2://","tuic://","socks://","http://","https://")
 
 def http_get(url, timeout=25, user_agent="Mozilla/5.0 GitHub-Actions Subscription-Refresh"):
@@ -268,15 +271,20 @@ def controller_ready():
 def delay_one(c):
     name=urllib.parse.quote(c["test_name"],safe="")
     test=urllib.parse.quote(TEST_URL,safe="")
-    for timeout in (5500,8000):
-        url=f"http://127.0.0.1:9090/proxies/{name}/delay?timeout={timeout}&url={test}"
+    delays=[]
+    for round_no in range(STRICT_TEST_ROUNDS):
+        url=f"http://127.0.0.1:9090/proxies/{name}/delay?timeout={TEST_TIMEOUT_MS}&url={test}"
         try:
-            data=json.loads(http_get(url,timeout/1000+3).decode())
+            data=json.loads(http_get(url,TEST_TIMEOUT_MS/1000+2).decode())
             d=int(data.get("delay",0) or 0)
-            if d>0: return d
         except Exception:
-            pass
-    return None
+            return None
+        if d <= 0 or d > MAX_DELAY_MS:
+            return None
+        delays.append(d)
+        if round_no + 1 < STRICT_TEST_ROUNDS:
+            time.sleep(0.4)
+    return round(sum(delays)/len(delays))
 
 def quotas(counts,total_keep):
     total=sum(counts.values())
@@ -406,12 +414,31 @@ def main():
 
     usable=[c for c in testable if c.get("delay")]
     usable.sort(key=lambda x:x["delay"])
+
+    # Collapse duplicate endpoints after strict testing. If multiple configs
+    # share the same server:port, keep only the lowest-latency passing config.
+    endpoint_best={}
+    for c in usable:
+        endpoint=(str(c.get("server","")).lower(), int(c.get("port",0) or 0))
+        if endpoint not in endpoint_best:
+            endpoint_best[endpoint]=c
+    endpoint_duplicates_removed=len(usable)-len(endpoint_best)
+    usable=list(endpoint_best.values())
+    usable.sort(key=lambda x:x["delay"])
+
     counts={k:sum(1 for x in usable if x["country"]==k) for k in ("US","SG","JP")}
     if len(usable)>200:
         q=quotas(counts,100)
         selected=[]
         for country in ("US","SG","JP"):
             arr=[x for x in usable if x["country"]==country]
+            # Prefer TCP/TLS/REALITY/WS-family configs over UDP-heavy protocols
+            # when the pool is large enough to require capping.
+            def preference(x):
+                scheme=x.get("scheme","")
+                udp_heavy=1 if scheme in ("hysteria2","hy2","tuic") else 0
+                return (udp_heavy, x["delay"])
+            arr.sort(key=preference)
             selected += arr[:q[country]]
         selected.sort(key=lambda x:x["delay"])
     else:
@@ -427,6 +454,8 @@ def main():
         "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),"jikun_source_nodes":len(jikun_lines),
         "jikun_clash_proxies":len(jikun_proxies),"jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
         "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),"selected":len(selected),
+        "strict_test_rounds":STRICT_TEST_ROUNDS,"max_delay_ms":MAX_DELAY_MS,
+        "endpoint_duplicates_removed":endpoint_duplicates_removed,
         "usable_by_country":counts,"selected_by_country":{k:sum(1 for x in selected if x["country"]==k) for k in ("US","SG","JP")},
         "quota_if_capped":q,
         "selected_latency_ms":{"min":min(x["delay"] for x in selected),"max":max(x["delay"] for x in selected),
