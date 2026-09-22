@@ -4,7 +4,129 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-09-22T03:04:20Z"
+      "last_pass_utc": "2026-09-22T03:26:40Z"
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": true,
+      "fail_streak": 1,
+      "last_fail_utc": "2026-09-22T03:26:40Z"
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg1-r.link-t7.com:10036?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": true,
+      "fail_streak": 1,
+      "last_fail_utc": "2026-09-22T03:26:40Z"
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp5-r.link-t7.com:10035?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": true,
+      "fail_streak": 1,
+      "last_fail_utc": "2026-09-22T03:26:40Z"
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp1-r.link-t7.com:10031?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-09-22T03:26:40Z"
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp4-r.link-t7.com:10034?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": true,
+      "fail_streak": 1,
+      "last_fail_utc": "2026-09-22T03:26:40Z"
+    },
+    "vless://e2632874-614e-4261-af62-52aca3358e4e@173.234.14.105:59615?encryption=none&flow=xtls-rprx-vision&fp=chrome&headerType=none&pbk=7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M&security=reality&sid=6b&sni=biosmod.partners.nvidia.com&spx=%2F7200b0b923f69f9&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://efr-marktplatz.club:443?allowInsecure=1&sni=efr-marktplatz.club": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://fan.596189.xyz:443?allowInsecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:null@jewelscollecti.icu:443?allowInsecure=1&sni=jewelscollecti.icu": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:null@fan.571589.xyz:443": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-09-22T03:26:40Z"
+    },
+    "vless://5be7fb02-b6a5-450f-b041-3243b98e8420@72.56.41.33:40443?flow=xtls-rprx-vision&fp=firefox&pbk=Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE&security=reality&sid=ee33&sni=deepl.com&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:None@138.199.35.197:9002?allowInsecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://5aaa5259-f924-4682-a4a3-149d472a9dcc@jp.sofast.live:52683?allowInsecure=1&security=none&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://cb53f904-c979-454f-bf43-621990008148@104.21.62.195:443?fp=chrome&host=3.qq1-0.kdns.fr&path=%2FLNbYtR09FXg1AmmjhdiHvR8v&security=tls&sni=3.qq1-0.kdns.fr&type=ws": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:None@138.199.35.217:9002?allowInsecure=1&sni=138.199.35.217": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp2-r.link-t7.com:10032?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp3-r.link-t7.com:10033?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@jp6-r.link-t7.com:10036?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg3-r.link-t7.com:10038?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=d1.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg4-r.link-t7.com:10039?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=d1.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg5-r.link-t7.com:10040?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=d1.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us1-r.link-t7.com:10238?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us2-r.link-t7.com:10239?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us3-r.link-t7.com:10240?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us4-r.link-t7.com:10241?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us5-r.link-t7.com:10242?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us6-r.link-t7.com:10243?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us7-r.link-t7.com:10244?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@us8-r.link-t7.com:10245?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=movie&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
+      "ever_passed": false,
+      "fail_streak": 0
     }
   }
 }
