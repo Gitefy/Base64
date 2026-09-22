@@ -10,6 +10,7 @@ HEALTH = Path("node_health.json")
 QZZ64 = ["https://234.qzz.io/fsllist64", "https://isdo.dpdns.org/fsllist64"]
 QZZYAML = ["https://234.qzz.io/fsllistyaml", "https://isdo.dpdns.org/fsllistyaml"]
 JIKUN_URL = "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3"
+JIKUN_EXTRA_URL = "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3"
 JIJI_URL = "https://b.545437.xyz/jiji?token=05c7f843a5cc4c57383fb5085a57aa33"
 MITCE_URL = "https://app.mitce.net/?sid=532469&token=fec41d1627b2a7ae5207"
 MANUAL_SEEDS = [
@@ -377,6 +378,14 @@ def main():
     except Exception as e:
         print("jikun generic fetch failed:", e)
 
+    jikun_extra_lines=[]
+    try:
+        rawjx=http_get(JIKUN_EXTRA_URL, 30, "v2rayN")
+        jikun_extra_lines=subscription_lines(rawjx)
+        print("fetched jikun extra generic", len(rawjx), "bytes", len(jikun_extra_lines), "share links")
+    except Exception as e:
+        print("jikun extra generic fetch failed:", e)
+
     jiji_lines=[]
     if JIJI_URL:
         try:
@@ -409,6 +418,15 @@ def main():
     except Exception as e:
         print("jikun clash fetch failed:", e)
 
+    jikun_extra_proxies=[]
+    try:
+        rawjxy=http_get(JIKUN_EXTRA_URL, 30, "Clash.Meta")
+        jxy=yaml.safe_load(rawjxy.decode("utf-8","ignore"))
+        jikun_extra_proxies=(jxy or {}).get("proxies",[]) if isinstance(jxy,dict) else []
+        print("fetched jikun extra clash", len(rawjxy), "bytes", len(jikun_extra_proxies), "proxies")
+    except Exception as e:
+        print("jikun extra clash fetch failed:", e)
+
     jiji_proxies=[]
     if JIJI_URL:
         try:
@@ -429,7 +447,7 @@ def main():
         except Exception as e:
             print("mitce clash fetch failed:", e)
 
-    proxies = list(proxies) + list(jikun_proxies) + list(jiji_proxies) + list(mitce_proxies)
+    proxies = list(proxies) + list(jikun_proxies) + list(jikun_extra_proxies) + list(jiji_proxies) + list(mitce_proxies)
     indexes=proxy_indexes(proxies)
 
     parsed=[]
@@ -448,6 +466,9 @@ def main():
         if x: parsed.append(x)
     for u in jikun_lines:
         x=parse_uri(u,"jikun")
+        if x: parsed.append(x)
+    for u in jikun_extra_lines:
+        x=parse_uri(u,"jikun-extra")
         if x: parsed.append(x)
     for u in jiji_lines:
         x=parse_uri(u,"jiji")
@@ -631,10 +652,13 @@ def main():
 
     stats={
         "source_v2ray":src64,"source_clash":srcy,"source_jikun":JIKUN_URL,
+        "source_jikun_extra":JIKUN_EXTRA_URL,
         "source_jiji_configured":bool(JIJI_URL),"source_mitce_configured":bool(MITCE_URL),
         "manual_seed_nodes":len(MANUAL_SEEDS),
         "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),"jikun_source_nodes":len(jikun_lines),
-        "jikun_clash_proxies":len(jikun_proxies),"jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
+        "jikun_clash_proxies":len(jikun_proxies),
+        "jikun_extra_source_nodes":len(jikun_extra_lines),"jikun_extra_clash_proxies":len(jikun_extra_proxies),
+        "jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
         "mitce_source_nodes":len(mitce_lines),"mitce_clash_proxies":len(mitce_proxies),
         "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),
         "strict_selected":len(selected),"grace_retained":len(grace_selected),"selected":len(final_selected),
