@@ -6,13 +6,17 @@ import yaml
 
 OUT = Path("US_SG_JP_subscription_base64.txt")
 STATS = Path("US_SG_JP_stats.json")
+HEALTH = Path("node_health.json")
 QZZ64 = ["https://234.qzz.io/fsllist64", "https://isdo.dpdns.org/fsllist64"]
 QZZYAML = ["https://234.qzz.io/fsllistyaml", "https://isdo.dpdns.org/fsllistyaml"]
 JIKUN_URL = "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3"
 JIJI_URL = "https://b.545437.xyz/jiji?token=05c7f843a5cc4c57383fb5085a57aa33"
 MITCE_URL = "https://app.mitce.net/?sid=532469&token=fec41d1627b2a7ae5207"
 MANUAL_SEEDS = [
-    "vless://e2632874-614e-4261-af62-52aca3358e4e@173.234.14.105:59615?encryption=none&flow=xtls-rprx-vision&security=reality&sni=biosmod.partners.nvidia.com&fp=chrome&pbk=7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M&sid=6b&spx=%2F7200b0b923f69f9&type=tcp&headerType=none#Singapore-vpn"
+    "vless://e2632874-614e-4261-af62-52aca3358e4e@173.234.14.105:59615?encryption=none&flow=xtls-rprx-vision&security=reality&sni=biosmod.partners.nvidia.com&fp=chrome&pbk=7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M&sid=6b&spx=%2F7200b0b923f69f9&type=tcp&headerType=none#Singapore-vpn",
+    # Previously China-verified SG node; keep it in the candidate pool so a
+    # single transient UDP/dual-target failure cannot make it disappear forever.
+    "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165#%F0%9F%87%B8%F0%9F%87%ACSG_113%7C1.2MB%2Fs%7C0%25%7CTK-SG%7CYT-CN%7CNF-SG%7CGPT%E2%81%BA-SG%7CCL-SG%7CSP-SG"
 ]
 TEST_URLS = [
     "https://www.gstatic.com/generate_204",
@@ -20,6 +24,7 @@ TEST_URLS = [
 ]
 STRICT_TEST_ROUNDS = 3
 REQUIRED_SUCCESS_ROUNDS = 2
+GRACE_FAIL_RUNS = 1
 MAX_DELAY_MS = 3000
 TEST_TIMEOUT_MS = 5000
 PROBE_BINARY = Path("/opt/china-probe/mihomo")
@@ -294,7 +299,6 @@ def delay_one(c):
     name=urllib.parse.quote(c["test_name"],safe="")
     successful_rounds=[]
     c["round_results"]=[]
-    last_round_ok=False
 
     for round_no in range(STRICT_TEST_ROUNDS):
         round_delays=[]
@@ -313,7 +317,6 @@ def delay_one(c):
                 break
             round_delays.append(d)
 
-        last_round_ok=round_ok
         if round_ok:
             avg=round(sum(round_delays)/len(round_delays))
             successful_rounds.append(avg)
@@ -324,7 +327,7 @@ def delay_one(c):
         if round_no + 1 < STRICT_TEST_ROUNDS:
             time.sleep(0.4)
 
-    if len(successful_rounds) < REQUIRED_SUCCESS_ROUNDS or not last_round_ok:
+    if len(successful_rounds) < REQUIRED_SUCCESS_ROUNDS:
         return None
     return round(sum(successful_rounds)/len(successful_rounds))
 
@@ -351,6 +354,17 @@ def main():
     if OUT.exists():
         try: old_lines=subscription_lines(OUT.read_bytes())
         except Exception: pass
+
+    health={"version":1,"nodes":{}}
+    if HEALTH.exists():
+        try:
+            loaded=json.loads(HEALTH.read_text(encoding="utf-8"))
+            if isinstance(loaded,dict) and isinstance(loaded.get("nodes"),dict):
+                health=loaded
+        except Exception as e:
+            print("health state load failed:", e)
+    health_nodes=health.setdefault("nodes",{})
+
     src64,raw64=fetch_first(QZZ64)
     new_lines=subscription_lines(raw64)
     if not new_lines: raise RuntimeError("V2Ray subscription decoded to zero share links")
@@ -424,7 +438,11 @@ def main():
         if x: parsed.append(x)
     for u in old_lines:
         x=parse_uri(u,"github")
-        if x: parsed.append(x)
+        if x:
+            parsed.append(x)
+            rec=health_nodes.setdefault(x["key"],{"ever_passed":True,"fail_streak":0})
+            rec["ever_passed"]=True
+            rec.setdefault("fail_streak",0)
     for u in new_lines:
         x=parse_uri(u,"qzz")
         if x: parsed.append(x)
@@ -530,7 +548,28 @@ def main():
         except: proc.kill()
         log_fh.close()
 
-    usable=[c for c in testable if c.get("delay")]
+    now_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime())
+    strict_usable_all=[c for c in testable if c.get("delay")]
+    strict_keys={c["key"] for c in strict_usable_all}
+    grace_candidates=[]
+
+    # Hysteresis: a node that has previously passed the China probe is not
+    # deleted after one transient bad run. It gets one grace cycle; a second
+    # consecutive failed run removes it unless it recovers.
+    for c in candidates:
+        rec=health_nodes.setdefault(c["key"],{"ever_passed":False,"fail_streak":0})
+        if c["key"] in strict_keys:
+            rec["ever_passed"]=True
+            rec["fail_streak"]=0
+            rec["last_pass_utc"]=now_utc
+            rec.pop("last_fail_utc",None)
+        elif rec.get("ever_passed"):
+            rec["fail_streak"]=int(rec.get("fail_streak",0) or 0)+1
+            rec["last_fail_utc"]=now_utc
+            if rec["fail_streak"] <= GRACE_FAIL_RUNS:
+                grace_candidates.append(c)
+
+    usable=list(strict_usable_all)
     usable.sort(key=lambda x:x["delay"])
 
     # Collapse duplicate endpoints after strict testing. If multiple configs
@@ -563,9 +602,33 @@ def main():
         q=counts.copy()
         selected=usable
 
-    if not selected: raise RuntimeError("URL test found zero usable nodes")
-    plain="\n".join(c["uri"] for c in selected)+"\n"
+    selected_keys={c["key"] for c in selected}
+    selected_endpoints={(str(c.get("server","")).lower(),int(c.get("port",0) or 0)) for c in selected}
+    grace_selected=[]
+    for c in grace_candidates:
+        endpoint=(str(c.get("server","")).lower(),int(c.get("port",0) or 0))
+        if c["key"] in selected_keys or endpoint in selected_endpoints:
+            continue
+        c["grace_retained"]=True
+        grace_selected.append(c)
+        selected_keys.add(c["key"])
+        selected_endpoints.add(endpoint)
+
+    final_selected=selected+grace_selected
+    if not final_selected:
+        raise RuntimeError("URL test found zero usable or grace-retained nodes")
+
+    plain="\n".join(c["uri"] for c in final_selected)+"\n"
     OUT.write_text(base64.b64encode(plain.encode()).decode()+"\n",encoding="utf-8")
+    HEALTH.write_text(json.dumps(health,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+
+    latency_values=[x["delay"] for x in selected if x.get("delay")]
+    latency_stats={
+        "min":min(latency_values) if latency_values else None,
+        "max":max(latency_values) if latency_values else None,
+        "median":sorted(latency_values)[len(latency_values)//2] if latency_values else None
+    }
+
     stats={
         "source_v2ray":src64,"source_clash":srcy,"source_jikun":JIKUN_URL,
         "source_jiji_configured":bool(JIJI_URL),"source_mitce_configured":bool(MITCE_URL),
@@ -573,17 +636,20 @@ def main():
         "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),"jikun_source_nodes":len(jikun_lines),
         "jikun_clash_proxies":len(jikun_proxies),"jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
         "mitce_source_nodes":len(mitce_lines),"mitce_clash_proxies":len(mitce_proxies),
-        "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),"selected":len(selected),
+        "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),
+        "strict_selected":len(selected),"grace_retained":len(grace_selected),"selected":len(final_selected),
         "test_location":"china-vps-self-hosted",
         "probe_binary":str(PROBE_BINARY),"probe_routing_mark":PROBE_ROUTING_MARK,
         "probe_route_interface":"eth0","probe_controller_port":PROBE_CONTROLLER_PORT,
         "test_urls":TEST_URLS,"strict_test_rounds":STRICT_TEST_ROUNDS,
-        "required_success_rounds":REQUIRED_SUCCESS_ROUNDS,"max_delay_ms":MAX_DELAY_MS,
+        "required_success_rounds":REQUIRED_SUCCESS_ROUNDS,"grace_fail_runs":GRACE_FAIL_RUNS,"max_delay_ms":MAX_DELAY_MS,
         "endpoint_duplicates_removed":endpoint_duplicates_removed,
-        "usable_by_country":counts,"selected_by_country":{k:sum(1 for x in selected if x["country"]==k) for k in ("US","SG","JP")},
+        "usable_by_country":counts,
+        "strict_selected_by_country":{k:sum(1 for x in selected if x["country"]==k) for k in ("US","SG","JP")},
+        "grace_retained_by_country":{k:sum(1 for x in grace_selected if x["country"]==k) for k in ("US","SG","JP")},
+        "selected_by_country":{k:sum(1 for x in final_selected if x["country"]==k) for k in ("US","SG","JP")},
         "quota_if_capped":q,
-        "selected_latency_ms":{"min":min(x["delay"] for x in selected),"max":max(x["delay"] for x in selected),
-                               "median":sorted(x["delay"] for x in selected)[len(selected)//2]},
+        "selected_latency_ms":latency_stats,
         "generated_at_utc":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime())
     }
     STATS.write_text(json.dumps(stats,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

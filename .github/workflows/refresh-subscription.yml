@@ -48,7 +48,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config http.proxy "http://127.0.0.1:7890"
           git config https.proxy "http://127.0.0.1:7890"
-          git add US_SG_JP_subscription_base64.txt US_SG_JP_stats.json
+          git add US_SG_JP_subscription_base64.txt US_SG_JP_stats.json node_health.json
           git diff --cached --quiet || git commit -m "Refresh China-tested US SG JP subscription"
           for attempt in 1 2 3; do
             git push && exit 0
