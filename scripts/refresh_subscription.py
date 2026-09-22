@@ -64,24 +64,29 @@ def subscription_lines(raw):
 def country_from_name(name):
     s=urllib.parse.unquote(str(name or "")).strip()
     u=s.upper()
-    # Use the node's leading country label only. Do not classify by capability
-    # tags such as TK-US / YT-US / SP-US later in the name.
-    if s.startswith("🇺🇸"): return "US"
-    if s.startswith("🇸🇬"): return "SG"
-    if s.startswith("🇯🇵"): return "JP"
-    head=u.split("|",1)[0].strip()
-    if re.match(r"^(US|USA)(?:[_\\-\\s]|$)", head) or re.match(r"^(SEATTLE|LOS ANGELES|SAN JOSE|DALLAS|NEW YORK|CHICAGO|MIAMI)(?:[_\\-\\s]|$)", head):
+    # Classify only from the first display segment before "|" so capability
+    # tags in later segments (for example TK-US / YT-US / SP-US) do not
+    # misclassify a node. Providers often prepend symbols/emojis, so allow the
+    # actual country token to appear anywhere inside that first segment.
+    head_raw=s.split("|",1)[0].strip()
+    head=head_raw.upper()
+
+    if "🇺🇸" in head_raw: return "US"
+    if "🇸🇬" in head_raw: return "SG"
+    if "🇯🇵" in head_raw: return "JP"
+
+    if re.search(r"(?:^|[^A-Z0-9])(US|USA|SEATTLE|LOS ANGELES|SAN JOSE|DALLAS|NEW YORK|CHICAGO|MIAMI)(?:[^A-Z0-9]|$)", head):
         return "US"
-    if re.match(r"^(SG|SINGAPORE)(?:[_\\-\\s]|$)", head):
+    if re.search(r"(?:^|[^A-Z0-9])(SG|SINGAPORE)(?:[^A-Z0-9]|$)", head):
         return "SG"
-    if re.match(r"^(JP|JAPAN|TOKYO|OSAKA)(?:[_\\-\\s]|$)", head):
+    if re.search(r"(?:^|[^A-Z0-9])(JP|JAPAN|TOKYO|OSAKA)(?:[^A-Z0-9]|$)", head):
         return "JP"
-    # Common Chinese labels used by subscription providers.
-    if re.match(r"^(美国|洛杉矶|西雅图|圣何塞|达拉斯|纽约|芝加哥|迈阿密)(?:[_\\-\\s丨|]|$)", s):
+
+    if re.search(r"(美国|洛杉矶|西雅图|圣何塞|达拉斯|纽约|芝加哥|迈阿密)", head_raw):
         return "US"
-    if re.match(r"^(新加坡|狮城)(?:[_\\-\\s丨|]|$)", s):
+    if re.search(r"(新加坡|狮城)", head_raw):
         return "SG"
-    if re.match(r"^(日本|东京|大阪)(?:[_\\-\\s丨|]|$)", s):
+    if re.search(r"(日本|东京|大阪)", head_raw):
         return "JP"
     return None
 
