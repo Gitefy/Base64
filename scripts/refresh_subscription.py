@@ -14,11 +14,13 @@ JIKUN_URL = "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placehold
 JIKUN_EXTRA_URL = "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3"
 JIJI_URL = "https://b.545437.xyz/jiji?token=05c7f843a5cc4c57383fb5085a57aa33"
 MITCE_URL = "https://app.mitce.net/?sid=532469&token=fec41d1627b2a7ae5207"
+ABYSS_URL = "https://5159fa3d-c339-4bab-aad3-a4d8107eba5d.9674021.xyz/Abyss/1edc369227d5725a0f5dac9c7635f03d"
 SHORT_LIVED_SOURCES = {
     "jikun": JIKUN_URL,
     "jikun-extra": JIKUN_EXTRA_URL,
     "jiji": JIJI_URL,
     "mitce": MITCE_URL,
+    "abyss": ABYSS_URL,
 }
 MANUAL_SEEDS = [
     "vless://e2632874-614e-4261-af62-52aca3358e4e@173.234.14.105:59615?encryption=none&flow=xtls-rprx-vision&security=reality&sni=biosmod.partners.nvidia.com&fp=chrome&pbk=7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M&sid=6b&spx=%2F7200b0b923f69f9&type=tcp&headerType=none#Singapore-vpn",
@@ -451,6 +453,20 @@ def main():
     elif MITCE_URL:
         print("mitce source retired; skipping")
 
+    abyss_lines=[]
+    if source_active("abyss"):
+        try:
+            rawa=http_get(ABYSS_URL, 30, "v2rayN")
+            abyss_lines=subscription_lines(rawa)
+            source_fetch_success.add("abyss")
+            print("fetched abyss generic", len(rawa), "bytes", len(abyss_lines), "share links")
+        except Exception as e:
+            if isinstance(e,urllib.error.HTTPError) and e.code in (401,403,404,410):
+                permanent_source_failures.add("abyss")
+            print("abyss generic fetch failed:", e)
+    elif ABYSS_URL:
+        print("abyss source retired; skipping")
+
     srcy,rawy=fetch_first(QZZYAML)
     y=yaml.safe_load(rawy.decode("utf-8","ignore"))
     proxies=(y or {}).get("proxies",[]) if isinstance(y,dict) else []
@@ -496,7 +512,17 @@ def main():
         except Exception as e:
             print("mitce clash fetch failed:", e)
 
-    proxies = list(proxies) + list(jikun_proxies) + list(jikun_extra_proxies) + list(jiji_proxies) + list(mitce_proxies)
+    abyss_proxies=[]
+    if source_active("abyss"):
+        try:
+            raway=http_get(ABYSS_URL, 30, "Clash.Meta")
+            ay=yaml.safe_load(raway.decode("utf-8","ignore"))
+            abyss_proxies=(ay or {}).get("proxies",[]) if isinstance(ay,dict) else []
+            print("fetched abyss clash", len(raway), "bytes", len(abyss_proxies), "proxies")
+        except Exception as e:
+            print("abyss clash fetch failed:", e)
+
+    proxies = list(proxies) + list(jikun_proxies) + list(jikun_extra_proxies) + list(jiji_proxies) + list(mitce_proxies) + list(abyss_proxies)
     indexes=proxy_indexes(proxies)
 
     transient_source_keys={name:set() for name in SHORT_LIVED_SOURCES}
@@ -535,6 +561,12 @@ def main():
         if x:
             parsed.append(x)
             transient_source_keys["mitce"].add(x["key"])
+
+    for u in abyss_lines:
+        x=parse_uri(u,"abyss")
+        if x:
+            parsed.append(x)
+            transient_source_keys["abyss"].add(x["key"])
 
     dedup={}
     for c in parsed:
@@ -745,6 +777,7 @@ def main():
         "source_v2ray":src64,"source_clash":srcy,"source_jikun":JIKUN_URL,
         "source_jikun_extra":JIKUN_EXTRA_URL,
         "source_jiji_configured":bool(JIJI_URL),"source_mitce_configured":bool(MITCE_URL),
+        "source_abyss_configured":bool(ABYSS_URL),
         "short_lived_source_policy":"retire when permanent HTTP failure, no target candidates, or zero strict usable nodes",
         "retired_sources_count":len(retired_sources),"retired_this_run":retired_this_run,
         "manual_seed_nodes":len(MANUAL_SEEDS),
@@ -753,6 +786,7 @@ def main():
         "jikun_extra_source_nodes":len(jikun_extra_lines),"jikun_extra_clash_proxies":len(jikun_extra_proxies),
         "jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
         "mitce_source_nodes":len(mitce_lines),"mitce_clash_proxies":len(mitce_proxies),
+        "abyss_source_nodes":len(abyss_lines),"abyss_clash_proxies":len(abyss_proxies),
         "filtered_unique":len(candidates),"testable":len(testable),"usable":len(usable),
         "strict_selected":len(selected),"grace_retained":len(grace_selected),"selected":len(final_selected),
         "test_location":"china-vps-self-hosted",
