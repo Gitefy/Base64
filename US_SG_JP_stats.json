@@ -7,10 +7,16 @@
   "source_mitce_configured": true,
   "source_abyss_configured": true,
   "short_lived_source_policy": "retire when permanent HTTP failure, no target candidates, or zero strict usable nodes",
-  "retired_sources_count": 4,
-  "retired_this_run": [],
+  "retired_sources_count": 5,
+  "retired_this_run": [
+    {
+      "name": "abyss",
+      "url": "https://5159fa3d-c339-4bab-aad3-a4d8107eba5d.9674021.xyz/Abyss/1edc369227d5725a0f5dac9c7635f03d",
+      "reason": "permanent_http_failure"
+    }
+  ],
   "manual_seed_nodes": 3,
-  "previous_github_nodes": 14,
+  "previous_github_nodes": 12,
   "source_nodes": 18,
   "jikun_source_nodes": 0,
   "jikun_clash_proxies": 0,
@@ -20,14 +26,14 @@
   "jiji_clash_proxies": 0,
   "mitce_source_nodes": 0,
   "mitce_clash_proxies": 0,
-  "abyss_source_nodes": 191,
-  "abyss_clash_proxies": 191,
-  "filtered_unique": 79,
-  "testable": 73,
-  "usable": 5,
-  "strict_selected": 5,
-  "grace_retained": 7,
-  "selected": 12,
+  "abyss_source_nodes": 0,
+  "abyss_clash_proxies": 0,
+  "filtered_unique": 26,
+  "testable": 22,
+  "usable": 6,
+  "strict_selected": 6,
+  "grace_retained": 4,
+  "selected": 10,
   "test_location": "china-vps-self-hosted",
   "probe_binary": "/opt/china-probe/mihomo",
   "probe_routing_mark": 524288,
@@ -41,36 +47,36 @@
   "required_success_rounds": 2,
   "grace_fail_runs": 1,
   "max_delay_ms": 3000,
-  "endpoint_duplicates_removed": 1,
+  "endpoint_duplicates_removed": 2,
   "usable_by_country": {
-    "US": 1,
-    "SG": 3,
+    "US": 4,
+    "SG": 1,
     "JP": 1
   },
   "strict_selected_by_country": {
-    "US": 1,
-    "SG": 3,
+    "US": 4,
+    "SG": 1,
     "JP": 1
   },
   "grace_retained_by_country": {
-    "US": 4,
-    "SG": 1,
-    "JP": 2
-  },
-  "selected_by_country": {
-    "US": 5,
-    "SG": 4,
-    "JP": 3
-  },
-  "quota_if_capped": {
-    "US": 1,
+    "US": 0,
     "SG": 3,
     "JP": 1
   },
-  "selected_latency_ms": {
-    "min": 702,
-    "max": 1297,
-    "median": 874
+  "selected_by_country": {
+    "US": 4,
+    "SG": 4,
+    "JP": 2
   },
-  "generated_at_utc": "2026-09-23T04:48:49Z"
+  "quota_if_capped": {
+    "US": 4,
+    "SG": 1,
+    "JP": 1
+  },
+  "selected_latency_ms": {
+    "min": 291,
+    "max": 1607,
+    "median": 846
+  },
+  "generated_at_utc": "2026-09-23T21:31:45Z"
 }
