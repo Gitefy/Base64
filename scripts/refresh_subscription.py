@@ -12,12 +12,14 @@ QZZ64 = ["https://234.qzz.io/fsllist64", "https://isdo.dpdns.org/fsllist64"]
 QZZYAML = ["https://234.qzz.io/fsllistyaml", "https://isdo.dpdns.org/fsllistyaml"]
 JIKUN_URL = "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3"
 JIKUN_EXTRA_URL = "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3"
+JIKUN_THIRD_URL = "https://jikun.zmxoo.xyz/subapi?token=free_3yGzINPbgT2HQEp&placeholder=1&placeholder=2&placeholder=3"
 JIJI_URL = "https://b.545437.xyz/jiji?token=05c7f843a5cc4c57383fb5085a57aa33"
 MITCE_URL = "https://app.mitce.net/?sid=532469&token=fec41d1627b2a7ae5207"
 ABYSS_URL = "https://5159fa3d-c339-4bab-aad3-a4d8107eba5d.9674021.xyz/Abyss/1edc369227d5725a0f5dac9c7635f03d"
 SHORT_LIVED_SOURCES = {
     "jikun": JIKUN_URL,
     "jikun-extra": JIKUN_EXTRA_URL,
+    "jikun-third": JIKUN_THIRD_URL,
     "jiji": JIJI_URL,
     "mitce": MITCE_URL,
     "abyss": ABYSS_URL,
@@ -425,6 +427,20 @@ def main():
     else:
         print("jikun extra source retired; skipping")
 
+    jikun_third_lines=[]
+    if source_active("jikun-third"):
+        try:
+            rawjt=http_get(JIKUN_THIRD_URL, 30, "v2rayN")
+            jikun_third_lines=subscription_lines(rawjt)
+            source_fetch_success.add("jikun-third")
+            print("fetched jikun third generic", len(rawjt), "bytes", len(jikun_third_lines), "share links")
+        except Exception as e:
+            if isinstance(e,urllib.error.HTTPError) and e.code in (401,403,404,410):
+                permanent_source_failures.add("jikun-third")
+            print("jikun third generic fetch failed:", e)
+    else:
+        print("jikun third source retired; skipping")
+
     jiji_lines=[]
     if source_active("jiji"):
         try:
@@ -492,6 +508,16 @@ def main():
     except Exception as e:
         print("jikun extra clash fetch failed:", e)
 
+    jikun_third_proxies=[]
+    try:
+        if not source_active("jikun-third"): raise RuntimeError("source retired")
+        rawjty=http_get(JIKUN_THIRD_URL, 30, "Clash.Meta")
+        jty=yaml.safe_load(rawjty.decode("utf-8","ignore"))
+        jikun_third_proxies=(jty or {}).get("proxies",[]) if isinstance(jty,dict) else []
+        print("fetched jikun third clash", len(rawjty), "bytes", len(jikun_third_proxies), "proxies")
+    except Exception as e:
+        print("jikun third clash fetch failed:", e)
+
     jiji_proxies=[]
     if source_active("jiji"):
         try:
@@ -522,7 +548,7 @@ def main():
         except Exception as e:
             print("abyss clash fetch failed:", e)
 
-    proxies = list(proxies) + list(jikun_proxies) + list(jikun_extra_proxies) + list(jiji_proxies) + list(mitce_proxies) + list(abyss_proxies)
+    proxies = list(proxies) + list(jikun_proxies) + list(jikun_extra_proxies) + list(jikun_third_proxies) + list(jiji_proxies) + list(mitce_proxies) + list(abyss_proxies)
     indexes=proxy_indexes(proxies)
 
     transient_source_keys={name:set() for name in SHORT_LIVED_SOURCES}
@@ -550,6 +576,11 @@ def main():
         if x:
             parsed.append(x)
             transient_source_keys["jikun-extra"].add(x["key"])
+    for u in jikun_third_lines:
+        x=parse_uri(u,"jikun-third")
+        if x:
+            parsed.append(x)
+            transient_source_keys["jikun-third"].add(x["key"])
     for u in jiji_lines:
         x=parse_uri(u,"jiji")
         if x:
@@ -776,6 +807,7 @@ def main():
     stats={
         "source_v2ray":src64,"source_clash":srcy,"source_jikun":JIKUN_URL,
         "source_jikun_extra":JIKUN_EXTRA_URL,
+        "source_jikun_third":JIKUN_THIRD_URL,
         "source_jiji_configured":bool(JIJI_URL),"source_mitce_configured":bool(MITCE_URL),
         "source_abyss_configured":bool(ABYSS_URL),
         "short_lived_source_policy":"retire when permanent HTTP failure, no target candidates, or zero strict usable nodes",
@@ -784,6 +816,7 @@ def main():
         "previous_github_nodes":len(old_lines),"source_nodes":len(new_lines),"jikun_source_nodes":len(jikun_lines),
         "jikun_clash_proxies":len(jikun_proxies),
         "jikun_extra_source_nodes":len(jikun_extra_lines),"jikun_extra_clash_proxies":len(jikun_extra_proxies),
+        "jikun_third_source_nodes":len(jikun_third_lines),"jikun_third_clash_proxies":len(jikun_third_proxies),
         "jiji_source_nodes":len(jiji_lines),"jiji_clash_proxies":len(jiji_proxies),
         "mitce_source_nodes":len(mitce_lines),"mitce_clash_proxies":len(mitce_proxies),
         "abyss_source_nodes":len(abyss_lines),"abyss_clash_proxies":len(abyss_proxies),
