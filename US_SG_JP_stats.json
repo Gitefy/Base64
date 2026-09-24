@@ -3,37 +3,40 @@
   "source_clash": "https://234.qzz.io/fsllistyaml",
   "source_jikun": "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3",
   "source_jikun_extra": "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3",
+  "source_jikun_third": "https://jikun.zmxoo.xyz/subapi?token=free_3yGzINPbgT2HQEp&placeholder=1&placeholder=2&placeholder=3",
   "source_jiji_configured": true,
   "source_mitce_configured": true,
   "source_abyss_configured": true,
   "short_lived_source_policy": "retire when permanent HTTP failure, no target candidates, or zero strict usable nodes",
-  "retired_sources_count": 5,
+  "retired_sources_count": 6,
   "retired_this_run": [
     {
-      "name": "abyss",
-      "url": "https://5159fa3d-c339-4bab-aad3-a4d8107eba5d.9674021.xyz/Abyss/1edc369227d5725a0f5dac9c7635f03d",
-      "reason": "permanent_http_failure"
+      "name": "jikun-third",
+      "url": "https://jikun.zmxoo.xyz/subapi?token=free_3yGzINPbgT2HQEp&placeholder=1&placeholder=2&placeholder=3",
+      "reason": "no_us_sg_jp_candidates"
     }
   ],
   "manual_seed_nodes": 3,
-  "previous_github_nodes": 12,
+  "previous_github_nodes": 10,
   "source_nodes": 18,
   "jikun_source_nodes": 0,
   "jikun_clash_proxies": 0,
   "jikun_extra_source_nodes": 0,
   "jikun_extra_clash_proxies": 0,
+  "jikun_third_source_nodes": 0,
+  "jikun_third_clash_proxies": 135,
   "jiji_source_nodes": 0,
   "jiji_clash_proxies": 0,
   "mitce_source_nodes": 0,
   "mitce_clash_proxies": 0,
   "abyss_source_nodes": 0,
   "abyss_clash_proxies": 0,
-  "filtered_unique": 26,
-  "testable": 22,
-  "usable": 6,
-  "strict_selected": 6,
-  "grace_retained": 4,
-  "selected": 10,
+  "filtered_unique": 20,
+  "testable": 15,
+  "usable": 7,
+  "strict_selected": 7,
+  "grace_retained": 5,
+  "selected": 12,
   "test_location": "china-vps-self-hosted",
   "probe_binary": "/opt/china-probe/mihomo",
   "probe_routing_mark": 524288,
@@ -47,36 +50,36 @@
   "required_success_rounds": 2,
   "grace_fail_runs": 1,
   "max_delay_ms": 3000,
-  "endpoint_duplicates_removed": 2,
+  "endpoint_duplicates_removed": 0,
   "usable_by_country": {
-    "US": 4,
-    "SG": 1,
-    "JP": 1
+    "US": 5,
+    "SG": 0,
+    "JP": 2
   },
   "strict_selected_by_country": {
-    "US": 4,
-    "SG": 1,
-    "JP": 1
+    "US": 5,
+    "SG": 0,
+    "JP": 2
   },
   "grace_retained_by_country": {
-    "US": 0,
-    "SG": 3,
-    "JP": 1
+    "US": 4,
+    "SG": 1,
+    "JP": 0
   },
   "selected_by_country": {
-    "US": 4,
-    "SG": 4,
+    "US": 9,
+    "SG": 1,
     "JP": 2
   },
   "quota_if_capped": {
-    "US": 4,
-    "SG": 1,
-    "JP": 1
+    "US": 5,
+    "SG": 0,
+    "JP": 2
   },
   "selected_latency_ms": {
-    "min": 291,
-    "max": 1607,
-    "median": 846
+    "min": 385,
+    "max": 1350,
+    "median": 981
   },
-  "generated_at_utc": "2026-09-23T21:31:45Z"
+  "generated_at_utc": "2026-09-24T04:54:25Z"
 }
