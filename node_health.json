@@ -3,9 +3,9 @@
   "nodes": {
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
-      "fail_streak": 26,
+      "fail_streak": 27,
       "last_pass_utc": "2026-09-22T03:26:40Z",
-      "last_fail_utc": "2026-10-02T22:16:08Z"
+      "last_fail_utc": "2026-10-03T05:21:06Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -139,9 +139,8 @@
     },
     "https://fan.226278.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-09-22T06:47:40Z",
-      "last_fail_utc": "2026-09-22T11:17:30Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
     },
     "https://null:null@jewelscollecti.icu:443?sni=jewelscollecti.icu": {
       "ever_passed": false,
@@ -582,9 +581,8 @@
     },
     "https://138.199.35.210:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
-      "last_pass_utc": "2026-09-26T21:12:11Z",
-      "last_fail_utc": "2026-09-27T16:59:56Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
     },
     "vless://b05c7ba3-c5b1-4b6f-a599-eaaf3019d94c@108.59.244.158:443?flow=xtls-rprx-vision&fp=qq&pbk=9PK8Akff36jRpeEWGIyCvBMBpM45CZshy8D4rgxZCAc&security=reality&sid=fff2225187c77daf&sni=ads.x5.ru&type=tcp": {
       "ever_passed": false,
@@ -621,8 +619,9 @@
     },
     "hysteria2://https%3A%2F%2Fxship.2fa.cat@starlink-ft.251313.xyz:443?insecure=1&sni=xship.top": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-02T22:16:08Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-02T22:16:08Z",
+      "last_fail_utc": "2026-10-03T05:21:06Z"
     },
     "vmess:{\"add\":\"212.50.251.193\",\"aid\":0,\"host\":\"212.50.251.193\",\"id\":\"dabfcf88-0a4b-43ca-ac7a-a4f44d877bbc\",\"net\":\"ws\",\"path\":\"/vmess\",\"port\":8080,\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"none\",\"type\":\"none\",\"v\":\"2\"}": {
       "ever_passed": true,
@@ -796,9 +795,8 @@
     },
     "https://138.199.35.208:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
-      "last_pass_utc": "2026-10-02T12:38:45Z",
-      "last_fail_utc": "2026-10-02T22:16:08Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
     },
     "ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@54.234.217.115:443": {
       "ever_passed": false,
@@ -852,9 +850,8 @@
     },
     "https://38.28.193.188:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-09-26T21:12:11Z",
-      "last_fail_utc": "2026-09-27T16:59:56Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
     },
     "https://null:null@138.199.35.197:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -863,9 +860,9 @@
     },
     "https://testuser1:e4b72b531a2d10900519@147.182.216.4:443?allowInsecure=1&sni=93b6d804.acsnet.co": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-02T12:38:45Z",
-      "last_fail_utc": "2026-10-02T22:16:08Z"
+      "last_fail_utc": "2026-10-03T05:21:06Z"
     },
     "https://null:None@138.199.35.202:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -1031,8 +1028,9 @@
     },
     "vless://88ee0e1e-a2a2-477e-88ce-4875c058aeba@211.229.56.86:30021?fp=random&host=123.714541.xyz&path=%2FRa-vl&security=tls&sni=123.714541.xyz&type=ws": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-02T22:16:08Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-02T22:16:08Z",
+      "last_fail_utc": "2026-10-03T05:21:06Z"
     },
     "https://null:null@209.148.53.153:8090?allowInsecure=1": {
       "ever_passed": true,
@@ -1182,9 +1180,9 @@
     },
     "https://336501b6-51d2-11ee-a993-f23c9164ca5d:336501b6-51d2-11ee-a993-f23c9164ca5d@352f2792-t2dr40-t8kd6j-1c9em.se.oshuawei.com:443?allowInsecure=1&sni=352f2792-t2dr40-t8kd6j-1c9em.se.oshuawei.com": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-02T12:38:45Z",
-      "last_fail_utc": "2026-10-02T22:16:08Z"
+      "last_fail_utc": "2026-10-03T05:21:06Z"
     },
     "vless://81c4547b-e5d8-4af8-baf0-91c5c0c05a9b@sin-a-02.auuas.com:1891?flow=xtls-rprx-vision&fp=qq&pbk=YJLHQBNzHQ7sOeKbj-EkHo1Ym0asUyZKxj4l_thzyGA&security=reality&sid=8378f267&sni=www.npmjs.com&type=tcp": {
       "ever_passed": false,
@@ -1196,15 +1194,15 @@
     },
     "https://null:None@138.199.35.211:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-02T12:38:45Z",
-      "last_fail_utc": "2026-10-02T22:16:08Z"
+      "last_fail_utc": "2026-10-03T05:21:06Z"
     },
     "https://138.199.35.198:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-02T12:38:45Z",
-      "last_fail_utc": "2026-10-02T22:16:08Z"
+      "last_fail_utc": "2026-10-03T05:21:06Z"
     },
     "vless://b1c31d36-c6b5-414b-88d2-9e24e7bfcca3@104.24.43.44:443?fp=chrome&host=www.nihaoyun.top&path=%2F&security=tls&sni=www.nihaoyun.top&type=ws": {
       "ever_passed": false,
@@ -1236,8 +1234,9 @@
     },
     "vless://5567cac6-2a32-4318-83cd-7df3a9eebbd7@35.185.179.62:443?fp=chrome&pbk=hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4&security=reality&sid=eb97ce837da2f6ad&sni=www.cloudflare.com&type=tcp": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-02T22:16:08Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-02T22:16:08Z",
+      "last_fail_utc": "2026-10-03T05:21:06Z"
     },
     "https://138.199.35.217:9002?allowInsecure=1": {
       "ever_passed": false,
@@ -1253,13 +1252,48 @@
     },
     "hysteria2://f87376e17da040ed04c9665ce8972930@138.2.73.238:50160?insecure=1&sni=www.bing.com": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-02T22:16:08Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-02T22:16:08Z",
+      "last_fail_utc": "2026-10-03T05:21:06Z"
     },
     "vless://37615d66-5467-44a3-bc23-f2c3bef7f761@tk1.high-speed-test-56424.me:443?flow=xtls-rprx-vision&fp=chrome&pbk=p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM&security=reality&sid=21270a66&sni=aws.amazon.com&type=tcp": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-02T22:16:08Z"
+      "last_pass_utc": "2026-10-03T05:21:06Z"
+    },
+    "https://carolinafreigh.fun:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:None@138.199.35.206:9002?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
+    },
+    "https://138.199.35.197:9002?allowInsecure=1&sni=138.199.35.197": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
+    },
+    "https://137.175.22.84:443?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
+    },
+    "vless://0f47a872-b140-46f5-aef8-f46993f5fc01@27.44.143.169:33102?flow=xtls-rprx-vision&security=tls&sni=sgg.knhqf.com&type=tcp": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
+    },
+    "vless://593c2ff4-f051-4859-8449-b0130e2991df@216.38.170.8:26502?host=www.baidu.com&path=%2F04235e8c-cea8-4f16-8934-b704a89b40cb.live238.m3u8&security=none&type=ws": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
+    },
+    "https://null:null@138.199.35.208:9002?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-03T05:21:06Z"
     }
   }
 }
