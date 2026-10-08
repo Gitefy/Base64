@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-08T13:33:10Z"
+      "last_pass_utc": "2026-10-08T23:22:46Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -488,9 +488,9 @@
     },
     "https://null:null@138.199.35.205:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-08T06:07:53Z",
-      "last_fail_utc": "2026-10-08T13:33:10Z"
+      "last_fail_utc": "2026-10-08T23:22:46Z"
     },
     "https://bnVsbDpudWxs:@fullmanfirm.icu:443": {
       "ever_passed": false,
@@ -552,9 +552,9 @@
     },
     "https://138.199.35.204:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-08T06:07:53Z",
-      "last_fail_utc": "2026-10-08T13:33:10Z"
+      "last_fail_utc": "2026-10-08T23:22:46Z"
     },
     "https://null:null@38.28.193.188:443?allowInsecure=1": {
       "ever_passed": true,
@@ -575,15 +575,14 @@
     },
     "https://fan.571589.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 1,
-      "last_pass_utc": "2026-10-08T06:07:53Z",
-      "last_fail_utc": "2026-10-08T13:33:10Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-08T23:22:46Z"
     },
     "https://138.199.35.210:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-08T06:07:53Z",
-      "last_fail_utc": "2026-10-08T13:33:10Z"
+      "last_fail_utc": "2026-10-08T23:22:46Z"
     },
     "vless://b05c7ba3-c5b1-4b6f-a599-eaaf3019d94c@108.59.244.158:443?flow=xtls-rprx-vision&fp=qq&pbk=9PK8Akff36jRpeEWGIyCvBMBpM45CZshy8D4rgxZCAc&security=reality&sid=fff2225187c77daf&sni=ads.x5.ru&type=tcp": {
       "ever_passed": false,
@@ -797,9 +796,8 @@
     },
     "https://138.199.35.208:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-05T05:44:00Z",
-      "last_fail_utc": "2026-10-06T06:23:48Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-08T23:22:46Z"
     },
     "ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@54.234.217.115:443": {
       "ever_passed": false,
@@ -1642,9 +1640,9 @@
     },
     "https://38.28.185.143:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-08T06:07:53Z",
-      "last_fail_utc": "2026-10-08T13:33:10Z"
+      "last_fail_utc": "2026-10-08T23:22:46Z"
     },
     "https://137.175.22.120:443?allowInsecure=1": {
       "ever_passed": false,
@@ -1652,9 +1650,9 @@
     },
     "https://null:null@138.199.35.209:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-08T06:07:53Z",
-      "last_fail_utc": "2026-10-08T13:33:10Z"
+      "last_fail_utc": "2026-10-08T23:22:46Z"
     },
     "https://137.175.22.116:443?allowInsecure=1&sni=137.175.22.116": {
       "ever_passed": false,
@@ -1669,6 +1667,36 @@
       "fail_streak": 0
     },
     "vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@217.60.6.103:443?allowInsecure=1&fp=chrome&host=x.m-90.xyz&path=t.me%2FTEAMNETGRATISCOL&security=tls&sni=x.m-90.xyz&type=ws": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://138.199.35.211:9002?allowInsecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:None@138.199.35.218:9002?allowInsecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://96.5.129.85:443?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-08T23:22:46Z"
+    },
+    "vless://30e52776-55ac-3cb4-8d36-e2910f07e2c3@s2317.kukuss.top:443?flow=xtls-rprx-vision&fp=chrome&security=tls&sni=u695098uf24555c7s2316.gogocs.xyz&type=tcp": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-08T23:22:46Z"
+    },
+    "https://mmgr.club:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://bnVsbDpudWxs:@tzoa.fun:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://tzoa.fun:443?allowInsecure=1": {
       "ever_passed": false,
       "fail_streak": 0
     }
