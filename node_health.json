@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-10T21:46:30Z"
+      "last_pass_utc": "2026-10-11T05:49:49Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -191,7 +191,7 @@
     "https://null:None@138.199.35.217:9002?allowInsecure=1": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-10T21:46:30Z"
+      "last_pass_utc": "2026-10-11T05:49:49Z"
     },
     "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP1.abyssvpn.com:31104?insecure=1": {
       "ever_passed": false,
@@ -668,9 +668,8 @@
     },
     "https://138.199.35.212:9002?allowInsecure=1&sni=138.199.35.212": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-09-26T21:12:11Z",
-      "last_fail_utc": "2026-09-27T16:59:56Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T05:49:49Z"
     },
     "hysteria2://https%3A%2F%2Fxship.top@starlink-ft.251313.xyz:443?insecure=1&sni=xship.top": {
       "ever_passed": false,
@@ -1249,8 +1248,9 @@
       "last_fail_utc": "2026-10-03T11:42:05Z"
     },
     "https://138.199.35.217:9002?allowInsecure=1": {
-      "ever_passed": false,
-      "fail_streak": 0
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T05:49:49Z"
     },
     "https://bnVsbDpudWxs:@berniesbodybla.fun:443": {
       "ever_passed": false,
@@ -1314,9 +1314,9 @@
     },
     "https://20.42.108.114:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
+      "fail_streak": 3,
       "last_pass_utc": "2026-10-03T11:42:05Z",
-      "last_fail_utc": "2026-10-04T05:56:22Z"
+      "last_fail_utc": "2026-10-11T05:49:49Z"
     },
     "https://null:None@138.199.35.201:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -1474,8 +1474,9 @@
     },
     "https://137.175.22.40:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-10T21:46:30Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-10T21:46:30Z",
+      "last_fail_utc": "2026-10-11T05:49:49Z"
     },
     "https://fan.365747.xyz:443?allowInsecure=1": {
       "ever_passed": false,
@@ -1787,9 +1788,8 @@
     },
     "https://45.145.73.240:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 3,
-      "last_pass_utc": "2026-10-09T13:20:24Z",
-      "last_fail_utc": "2026-10-10T12:35:07Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T05:49:49Z"
     },
     "vmess:{\"add\":\"cdn.sfacg.uk\",\"aid\":0,\"host\":\"or3.sfacg.uk\",\"id\":\"ac251237-576f-40c8-a543-554960c958b1\",\"net\":\"ws\",\"path\":\"/or3\",\"port\":2083,\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"tls\",\"type\":\"none\",\"v\":\"2\"}": {
       "ever_passed": true,
@@ -1862,7 +1862,7 @@
     "https://null:null@fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-10T21:46:30Z"
+      "last_pass_utc": "2026-10-11T05:49:49Z"
     },
     "https://138.199.35.220:9002?allowInsecure=1": {
       "ever_passed": false,
@@ -1874,13 +1874,15 @@
     },
     "https://54.190.176.228:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-10T21:46:30Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-10T21:46:30Z",
+      "last_fail_utc": "2026-10-11T05:49:49Z"
     },
     "https://384d1b42-655f-11ed-a8bf-f23c91cfbbc9:384d1b42-655f-11ed-a8bf-f23c91cfbbc9@0cd5cc27-t9zts0-tazlv3-11p9g.se.oshuawei.com:443?allowInsecure=1&sni=0cd5cc27-t9zts0-tazlv3-11p9g.se.oshuawei.com": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-10T21:46:30Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-10T21:46:30Z",
+      "last_fail_utc": "2026-10-11T05:49:49Z"
     },
     "ss://YWVzLTI1Ni1nY206MjU4MWNlYmItZTQ1Mi00ZWUzLTg4NDktM2NkMzU4YmY5Mzk0@ruot.ayucloudservices.nl:22044": {
       "ever_passed": false,
@@ -1888,8 +1890,14 @@
     },
     "https://null:null@138.199.35.201:9002?allowInsecure=1&sni=138.199.35.201": {
       "ever_passed": true,
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-10T21:46:30Z",
+      "last_fail_utc": "2026-10-11T05:49:49Z"
+    },
+    "https://52.55.81.168:443?allowInsecure=1": {
+      "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-10T21:46:30Z"
+      "last_pass_utc": "2026-10-11T05:49:49Z"
     }
   }
 }
