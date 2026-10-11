@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-11T12:53:20Z"
+      "last_pass_utc": "2026-10-11T22:00:03Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -41,8 +41,9 @@
       "fail_streak": 0
     },
     "https://fan.596189.xyz:443?allowInsecure=1": {
-      "ever_passed": false,
-      "fail_streak": 0
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T22:00:03Z"
     },
     "https://null:null@jewelscollecti.icu:443?allowInsecure=1&sni=jewelscollecti.icu": {
       "ever_passed": false,
@@ -190,9 +191,9 @@
     },
     "https://null:None@138.199.35.217:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-11T05:49:49Z",
-      "last_fail_utc": "2026-10-11T12:53:20Z"
+      "last_fail_utc": "2026-10-11T22:00:03Z"
     },
     "hysteria2://992cf364-e298-4da6-a928-d2d570f57228@BGP1.abyssvpn.com:31104?insecure=1": {
       "ever_passed": false,
@@ -669,9 +670,9 @@
     },
     "https://138.199.35.212:9002?allowInsecure=1&sni=138.199.35.212": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-11T05:49:49Z",
-      "last_fail_utc": "2026-10-11T12:53:20Z"
+      "last_fail_utc": "2026-10-11T22:00:03Z"
     },
     "hysteria2://https%3A%2F%2Fxship.top@starlink-ft.251313.xyz:443?insecure=1&sni=xship.top": {
       "ever_passed": false,
@@ -716,9 +717,8 @@
     },
     "https://null:null@138.199.35.202:9002?allowInsecure=1&sni=138.199.35.202": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-09-25T17:13:59Z",
-      "last_fail_utc": "2026-09-26T05:00:26Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T22:00:03Z"
     },
     "https://crosscards.site:443?allowInsecure=1&sni=crosscards.site": {
       "ever_passed": false,
@@ -933,8 +933,9 @@
     },
     "https://138.199.35.216:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-11T12:53:20Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-11T12:53:20Z",
+      "last_fail_utc": "2026-10-11T22:00:03Z"
     },
     "https://null:None@138.199.35.215:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -1080,9 +1081,8 @@
     },
     "https://170.199.233.89:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-09T13:20:24Z",
-      "last_fail_utc": "2026-10-10T05:55:41Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T22:00:03Z"
     },
     "https://162.244.227.36:443?allowInsecure=1": {
       "ever_passed": true,
@@ -1463,9 +1463,8 @@
     },
     "https://138.199.35.205:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-04T05:56:22Z",
-      "last_fail_utc": "2026-10-05T05:44:00Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T22:00:03Z"
     },
     "vless://0f47a872-b140-46f5-aef8-f46993f5fc01@112.49.63.11:33102?flow=xtls-rprx-vision&security=tls&sni=sgg.knhqf.com&type=tcp": {
       "ever_passed": true,
@@ -1789,8 +1788,9 @@
     },
     "https://45.145.73.240:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-11T12:53:20Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-11T12:53:20Z",
+      "last_fail_utc": "2026-10-11T22:00:03Z"
     },
     "vmess:{\"add\":\"cdn.sfacg.uk\",\"aid\":0,\"host\":\"or3.sfacg.uk\",\"id\":\"ac251237-576f-40c8-a543-554960c958b1\",\"net\":\"ws\",\"path\":\"/or3\",\"port\":2083,\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"tls\",\"type\":\"none\",\"v\":\"2\"}": {
       "ever_passed": true,
@@ -1862,9 +1862,8 @@
     },
     "https://null:null@fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
-      "fail_streak": 1,
-      "last_pass_utc": "2026-10-11T05:49:49Z",
-      "last_fail_utc": "2026-10-11T12:53:20Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T22:00:03Z"
     },
     "https://138.199.35.220:9002?allowInsecure=1": {
       "ever_passed": false,
@@ -1898,9 +1897,9 @@
     },
     "https://52.55.81.168:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-11T05:49:49Z",
-      "last_fail_utc": "2026-10-11T12:53:20Z"
+      "last_fail_utc": "2026-10-11T22:00:03Z"
     },
     "https://fan.596189.xyz:443?allowInsecure=1&sni=fan.596189.xyz": {
       "ever_passed": false,
@@ -1908,8 +1907,9 @@
     },
     "https://44.228.137.206:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-11T12:53:20Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-11T12:53:20Z",
+      "last_fail_utc": "2026-10-11T22:00:03Z"
     },
     "https://fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": false,
@@ -1917,14 +1917,33 @@
     },
     "https://38.247.141.135:443?allowInsecure=1&sni=38.247.141.135": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-11T12:53:20Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-11T12:53:20Z",
+      "last_fail_utc": "2026-10-11T22:00:03Z"
     },
     "https://44.229.69.166:8443?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T22:00:03Z"
+    },
+    "https://kimberlymilano.icu:443?allowInsecure=1&sni=kimberlymilano.icu": {
       "ever_passed": false,
       "fail_streak": 0
     },
-    "https://kimberlymilano.icu:443?allowInsecure=1&sni=kimberlymilano.icu": {
+    "https://testuser1:e4b72b531a2d10900519@104.248.148.240:443?sni=us.acskey.co": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://137.175.22.52:443?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-11T22:00:03Z"
+    },
+    "https://null:None@efr-marktplatz.club:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://fan.226278.xyz:443?allowInsecure=1&sni=fan.226278.xyz": {
       "ever_passed": false,
       "fail_streak": 0
     }
