@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-13T22:47:06Z"
+      "last_pass_utc": "2026-10-14T11:55:44Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -560,9 +560,9 @@
     },
     "https://null:null@38.28.193.188:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-13T14:14:44Z",
-      "last_fail_utc": "2026-10-13T22:47:06Z"
+      "last_fail_utc": "2026-10-14T11:55:44Z"
     },
     "https://154.26.139.24:443?allowInsecure=1": {
       "ever_passed": true,
@@ -644,9 +644,9 @@
     },
     "https://fan.587475.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-13T14:14:44Z",
-      "last_fail_utc": "2026-10-13T22:47:06Z"
+      "last_fail_utc": "2026-10-14T11:55:44Z"
     },
     "https://138.199.35.215:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -656,8 +656,9 @@
     },
     "https://null:null@138.199.35.198:9002?allowInsecure=1&sni=138.199.35.198": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-13T22:47:06Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-13T22:47:06Z",
+      "last_fail_utc": "2026-10-14T11:55:44Z"
     },
     "vless://9819d5c6-bc6e-4e31-8af7-c023ecff6022@ghosts-spasm.quick-cdn.net:443?fp=chrome&host=ghosts-spasm.quick-cdn.net&path=%2Fws&security=tls&sni=ghosts-spasm.quick-cdn.net&type=ws": {
       "ever_passed": false,
@@ -927,8 +928,9 @@
     },
     "https://testuser1:e4b72b531a2d10900519@162.243.146.243:443?sni=a2f392f3.acsnet.co": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-13T22:47:06Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-13T22:47:06Z",
+      "last_fail_utc": "2026-10-14T11:55:44Z"
     },
     "https://138.199.35.216:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -1202,8 +1204,9 @@
     },
     "https://null:None@138.199.35.211:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-13T22:47:06Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-13T22:47:06Z",
+      "last_fail_utc": "2026-10-14T11:55:44Z"
     },
     "https://138.199.35.198:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -1861,8 +1864,9 @@
     },
     "https://null:null@fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-13T22:47:06Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-13T22:47:06Z",
+      "last_fail_utc": "2026-10-14T11:55:44Z"
     },
     "https://138.199.35.220:9002?allowInsecure=1": {
       "ever_passed": false,
@@ -1922,8 +1926,9 @@
     },
     "https://44.229.69.166:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-13T22:47:06Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-13T22:47:06Z",
+      "last_fail_utc": "2026-10-14T11:55:44Z"
     },
     "https://kimberlymilano.icu:443?allowInsecure=1&sni=kimberlymilano.icu": {
       "ever_passed": false,
@@ -2019,8 +2024,9 @@
     },
     "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:57541?flow=xtls-rprx-vision&fp=ios&pbk=hAtfAzXQrbxyqiK3b2XrsxZ35sWiN8iqp0LvjKr9_DE&security=reality&sid=22b19630280c3f&sni=www.lamer.com.sg&type=tcp": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-13T22:47:06Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-13T22:47:06Z",
+      "last_fail_utc": "2026-10-14T11:55:44Z"
     },
     "vmess:{\"add\":\"2m28TbSM5mN8yMu1.v.3dns.vip\",\"aid\":0,\"host\":\"2m28TbSM5mN8yMu1.v.3dns.vip\",\"id\":\"b89b702b-31ef-4f6a-85df-c264795a987b\",\"net\":\"ws\",\"path\":\"/ws-vmess\",\"port\":443,\"scy\":\"auto\",\"sni\":\"2m28TbSM5mN8yMu1.v.3dns.vip\",\"tls\":\"tls\",\"type\":\"none\",\"v\":\"2\"}": {
       "ever_passed": false,
@@ -2028,8 +2034,14 @@
     },
     "https://null:null@138.199.35.196:9002?allowInsecure=1&sni=138.199.35.196": {
       "ever_passed": true,
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-13T22:47:06Z",
+      "last_fail_utc": "2026-10-14T11:55:44Z"
+    },
+    "https://38.247.141.135:443?allowInsecure=1": {
+      "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-13T22:47:06Z"
+      "last_pass_utc": "2026-10-14T11:55:44Z"
     }
   }
 }
