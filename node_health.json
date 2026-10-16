@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-16T11:27:26Z"
+      "last_pass_utc": "2026-10-16T21:11:46Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -579,7 +579,7 @@
     "https://fan.571589.xyz:443": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-13T22:47:06Z"
+      "last_pass_utc": "2026-10-16T21:11:46Z"
     },
     "https://138.199.35.210:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -645,9 +645,8 @@
     },
     "https://fan.587475.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-13T14:14:44Z",
-      "last_fail_utc": "2026-10-14T11:55:44Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-16T21:11:46Z"
     },
     "https://138.199.35.215:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -682,7 +681,7 @@
     "https://null:null@138.199.35.200:9002?allowInsecure=1": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-16T11:27:26Z"
+      "last_pass_utc": "2026-10-16T21:11:46Z"
     },
     "hysteria2://9b9ac7d3-93c8-4802-a757-6dd3e1c63123@sg02-hy.poke-mon.xyz:20000?insecure=1&sni=www.bing.com": {
       "ever_passed": true,
@@ -800,9 +799,8 @@
     },
     "https://138.199.35.208:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-08T23:22:46Z",
-      "last_fail_utc": "2026-10-09T13:20:24Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-16T21:11:46Z"
     },
     "ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@54.234.217.115:443": {
       "ever_passed": false,
@@ -1318,9 +1316,9 @@
     },
     "https://20.42.108.114:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 3,
+      "fail_streak": 4,
       "last_pass_utc": "2026-10-03T11:42:05Z",
-      "last_fail_utc": "2026-10-11T05:49:49Z"
+      "last_fail_utc": "2026-10-16T21:11:46Z"
     },
     "https://null:None@138.199.35.201:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -1582,8 +1580,9 @@
       "fail_streak": 0
     },
     "https://138.199.35.209:9002?allowInsecure=1&sni=138.199.35.209": {
-      "ever_passed": false,
-      "fail_streak": 0
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-16T21:11:46Z"
     },
     "https://137.175.22.56:443?allowInsecure=1": {
       "ever_passed": true,
@@ -1639,8 +1638,9 @@
     },
     "https://138.199.35.197:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-16T11:27:26Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-16T11:27:26Z",
+      "last_fail_utc": "2026-10-16T21:11:46Z"
     },
     "https://137.175.22.74:443?allowInsecure=1": {
       "ever_passed": false,
@@ -1690,9 +1690,8 @@
     },
     "https://96.5.129.85:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-12T15:29:49Z",
-      "last_fail_utc": "2026-10-13T14:14:44Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-16T21:11:46Z"
     },
     "vless://30e52776-55ac-3cb4-8d36-e2910f07e2c3@s2317.kukuss.top:443?flow=xtls-rprx-vision&fp=chrome&security=tls&sni=u695098uf24555c7s2316.gogocs.xyz&type=tcp": {
       "ever_passed": true,
@@ -2065,9 +2064,9 @@
     },
     "https://38.95.111.226:9443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-15T21:25:13Z",
-      "last_fail_utc": "2026-10-16T11:27:26Z"
+      "last_fail_utc": "2026-10-16T21:11:46Z"
     },
     "https://149.88.21.129:443?allowInsecure=1": {
       "ever_passed": false,
@@ -2157,9 +2156,9 @@
     },
     "https://38.28.185.152:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-15T21:25:13Z",
-      "last_fail_utc": "2026-10-16T11:27:26Z"
+      "last_fail_utc": "2026-10-16T21:11:46Z"
     },
     "https://null:None@138.199.35.195:9002?allowInsecure=1&sni=138.199.35.195": {
       "ever_passed": false,
@@ -2179,8 +2178,9 @@
     },
     "ss://YWVzLTI1Ni1nY206NDk5ZWIxMzEtZjJiOC00NmI1LThmZDAtMTA4YzM3NWVkNTI1@ruot.ayucloudservices.nl:40020": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-16T11:27:26Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-16T11:27:26Z",
+      "last_fail_utc": "2026-10-16T21:11:46Z"
     },
     "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@43.247.132.85:41563?flow=xtls-rprx-vision&fp=random&pbk=HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc&security=reality&sid=25c79e5856c7&sni=iosapps.itunes.apple.com&type=tcp": {
       "ever_passed": false,
@@ -2188,13 +2188,37 @@
     },
     "ss://YWVzLTEyOC1nY206Yzg1NWI3MWUtZjNjMi00NDJhLTk0MjktMDg0NGViNDM0NmM1@ruot.ayucloudservices.nl:40018": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-16T11:27:26Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-16T11:27:26Z",
+      "last_fail_utc": "2026-10-16T21:11:46Z"
     },
     "ss://YWVzLTI1Ni1nY206NDk5ZWIxMzEtZjJiOC00NmI1LThmZDAtMTA4YzM3NWVkNTI1@ruot.ayucloudservices.nl:22051": {
       "ever_passed": true,
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-16T11:27:26Z",
+      "last_fail_utc": "2026-10-16T21:11:46Z"
+    },
+    "trojan://ae7eb4dwyaz25pxwgq59@66.23.203.21:59689?allowInsecure=1&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:46105?flow=xtls-rprx-vision&fp=safari&pbk=Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik&security=reality&sid=28f5c1f8f98a&sni=www.lamer.com.sg&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://138.199.35.200:9002?allowInsecure=1": {
+      "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-16T11:27:26Z"
+      "last_pass_utc": "2026-10-16T21:11:46Z"
+    },
+    "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:35544?flow=xtls-rprx-vision&fp=ios&pbk=HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc&security=reality&sid=25c79e5856c7&sni=iosapps.itunes.apple.com&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "trojan://ae7eb4dwyaz25pxwgq59@66.23.203.21:59689?allowInsecure=1&sni=66.23.203.21&type=tcp": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-16T21:11:46Z"
     }
   }
 }
