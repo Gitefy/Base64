@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-19T13:20:18Z"
+      "last_pass_utc": "2026-10-19T22:22:57Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -602,9 +602,9 @@
     },
     "https://138.199.35.207:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 3,
+      "fail_streak": 4,
       "last_pass_utc": "2026-10-13T00:42:47Z",
-      "last_fail_utc": "2026-10-14T17:13:13Z"
+      "last_fail_utc": "2026-10-19T22:22:57Z"
     },
     "https://fan.587475.xyz:443?allowInsecure=1&sni=fan.587475.xyz": {
       "ever_passed": true,
@@ -1461,9 +1461,9 @@
     },
     "https://44.248.167.117:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 3,
+      "fail_streak": 4,
       "last_pass_utc": "2026-10-04T05:56:22Z",
-      "last_fail_utc": "2026-10-18T20:46:28Z"
+      "last_fail_utc": "2026-10-19T22:22:57Z"
     },
     "https://138.199.35.207:9002?allowInsecure=1&sni=138.199.35.207": {
       "ever_passed": true,
@@ -2061,9 +2061,8 @@
     },
     "https://38.247.141.135:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
-      "last_pass_utc": "2026-10-19T04:43:23Z",
-      "last_fail_utc": "2026-10-19T13:20:18Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-19T22:22:57Z"
     },
     "https://138.199.35.211:9002?allowInsecure=1&sni=138.199.35.211": {
       "ever_passed": false,
@@ -2306,27 +2305,27 @@
     },
     "https://68.235.56.59:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-19T04:43:23Z",
-      "last_fail_utc": "2026-10-19T13:20:18Z"
+      "last_fail_utc": "2026-10-19T22:22:57Z"
     },
     "https://null:None@209.148.53.153:8090?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-19T04:43:23Z",
-      "last_fail_utc": "2026-10-19T13:20:18Z"
+      "last_fail_utc": "2026-10-19T22:22:57Z"
     },
     "https://149.88.21.140:9443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-19T04:43:23Z",
-      "last_fail_utc": "2026-10-19T13:20:18Z"
+      "last_fail_utc": "2026-10-19T22:22:57Z"
     },
     "https://fan.587475.xyz:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-19T04:43:23Z",
-      "last_fail_utc": "2026-10-19T13:20:18Z"
+      "last_fail_utc": "2026-10-19T22:22:57Z"
     },
     "https://137.175.22.45:443?allowInsecure=1": {
       "ever_passed": false,
@@ -2335,6 +2334,29 @@
     "https://148.135.10.80:443?allowInsecure=1": {
       "ever_passed": false,
       "fail_streak": 0
+    },
+    "https://jewelscollecti.icu:443?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-19T22:22:57Z"
+    },
+    "https://null:null@138.199.35.212:9002?allowInsecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://goedkoopgeluid.icu:443?sni=goedkoopgeluid.icu": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-19T22:22:57Z"
+    },
+    "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:34379?flow=xtls-rprx-vision&fp=chrome&pbk=KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA&security=reality&sid=e51285e3&sni=us1p1.xn--ghq880n3na965a.com&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://35.84.133.236:8443?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-19T22:22:57Z"
     }
   }
 }
