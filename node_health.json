@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-19T22:22:57Z"
+      "last_pass_utc": "2026-10-20T04:53:26Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -602,9 +602,9 @@
     },
     "https://138.199.35.207:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 4,
+      "fail_streak": 5,
       "last_pass_utc": "2026-10-13T00:42:47Z",
-      "last_fail_utc": "2026-10-19T22:22:57Z"
+      "last_fail_utc": "2026-10-20T04:53:26Z"
     },
     "https://fan.587475.xyz:443?allowInsecure=1&sni=fan.587475.xyz": {
       "ever_passed": true,
@@ -955,9 +955,8 @@
     },
     "https://null:null@138.199.35.217:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-18T15:53:34Z",
-      "last_fail_utc": "2026-10-19T04:43:23Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-20T04:53:26Z"
     },
     "https://null:None@fullmanfirm.icu:443?allowInsecure=1": {
       "ever_passed": false,
@@ -1244,9 +1243,8 @@
     },
     "https://fan.226278.xyz:443?sni=fan.226278.xyz": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-17T20:38:37Z",
-      "last_fail_utc": "2026-10-18T11:08:50Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-20T04:53:26Z"
     },
     "https://149.34.248.65:443?allowInsecure=1": {
       "ever_passed": false,
@@ -1895,9 +1893,8 @@
     },
     "https://54.190.176.228:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-18T04:36:52Z",
-      "last_fail_utc": "2026-10-18T15:53:34Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-20T04:53:26Z"
     },
     "https://384d1b42-655f-11ed-a8bf-f23c91cfbbc9:384d1b42-655f-11ed-a8bf-f23c91cfbbc9@0cd5cc27-t9zts0-tazlv3-11p9g.se.oshuawei.com:443?allowInsecure=1&sni=0cd5cc27-t9zts0-tazlv3-11p9g.se.oshuawei.com": {
       "ever_passed": true,
@@ -2062,7 +2059,7 @@
     "https://38.247.141.135:443?allowInsecure=1": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-19T22:22:57Z"
+      "last_pass_utc": "2026-10-20T04:53:26Z"
     },
     "https://138.199.35.211:9002?allowInsecure=1&sni=138.199.35.211": {
       "ever_passed": false,
@@ -2259,9 +2256,8 @@
     },
     "https://198.44.135.19:9443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-18T04:36:52Z",
-      "last_fail_utc": "2026-10-18T15:53:34Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-20T04:53:26Z"
     },
     "https://18.206.28.143:8443?allowInsecure=1": {
       "ever_passed": true,
@@ -2337,8 +2333,9 @@
     },
     "https://jewelscollecti.icu:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-19T22:22:57Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-19T22:22:57Z",
+      "last_fail_utc": "2026-10-20T04:53:26Z"
     },
     "https://null:null@138.199.35.212:9002?allowInsecure=1": {
       "ever_passed": false,
@@ -2346,8 +2343,9 @@
     },
     "https://goedkoopgeluid.icu:443?sni=goedkoopgeluid.icu": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-19T22:22:57Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-19T22:22:57Z",
+      "last_fail_utc": "2026-10-20T04:53:26Z"
     },
     "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:34379?flow=xtls-rprx-vision&fp=chrome&pbk=KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA&security=reality&sid=e51285e3&sni=us1p1.xn--ghq880n3na965a.com&type=tcp": {
       "ever_passed": false,
@@ -2355,8 +2353,22 @@
     },
     "https://35.84.133.236:8443?allowInsecure=1": {
       "ever_passed": true,
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-19T22:22:57Z",
+      "last_fail_utc": "2026-10-20T04:53:26Z"
+    },
+    "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:56656?allowInsecure=1&flow=xtls-rprx-vision&fp=ios&pbk=QFM3jTzb5n-E9L2cfFo6GHqioGmIkjmG60l8wXA4IXc&security=reality&sid=aae6d935&sni=cdn-dynmedia-1.microsoft.com&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://198.44.138.27:9443?allowInsecure=1": {
+      "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-19T22:22:57Z"
+      "last_pass_utc": "2026-10-20T04:53:26Z"
+    },
+    "trojan://bad06c3525a6eaee1757b34776b83892@4c2d5151.266nets.com:12019?allowInsecure=1&sni=ixigua.com&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
     }
   }
 }
