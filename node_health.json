@@ -3,9 +3,8 @@
   "nodes": {
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
-      "fail_streak": 1,
-      "last_pass_utc": "2026-10-24T20:52:20Z",
-      "last_fail_utc": "2026-10-25T04:44:19Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-25T20:53:23Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -140,9 +139,8 @@
     },
     "https://fan.226278.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-21T11:52:29Z",
-      "last_fail_utc": "2026-10-21T21:44:58Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-25T20:53:23Z"
     },
     "https://null:null@jewelscollecti.icu:443?sni=jewelscollecti.icu": {
       "ever_passed": false,
@@ -555,9 +553,9 @@
     },
     "https://null:null@fan.365747.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 4,
+      "fail_streak": 5,
       "last_pass_utc": "2026-10-22T17:12:40Z",
-      "last_fail_utc": "2026-10-25T04:44:19Z"
+      "last_fail_utc": "2026-10-25T20:53:23Z"
     },
     "https://138.199.35.204:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -584,9 +582,9 @@
     },
     "https://fan.571589.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-24T20:52:20Z",
-      "last_fail_utc": "2026-10-25T04:44:19Z"
+      "last_fail_utc": "2026-10-25T20:53:23Z"
     },
     "https://138.199.35.210:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -830,9 +828,8 @@
     },
     "https://null:null@138.199.35.199:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 3,
-      "last_pass_utc": "2026-09-26T05:00:26Z",
-      "last_fail_utc": "2026-10-10T12:35:07Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-25T20:53:23Z"
     },
     "vless://87c467e9-f0af-4b03-8fbd-65fd375d3a26@172.64.144.252:443?fp=randomized&host=pmpmppm.pages.dev&path=%2F%3Fed%3D2048&security=tls&sni=pmpmppm.pages.dev&type=ws": {
       "ever_passed": false,
@@ -864,9 +861,9 @@
     },
     "https://38.28.193.188:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-24T20:52:20Z",
-      "last_fail_utc": "2026-10-25T04:44:19Z"
+      "last_fail_utc": "2026-10-25T20:53:23Z"
     },
     "https://null:null@138.199.35.197:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -933,9 +930,9 @@
     },
     "https://testuser1:e4b72b531a2d10900519@147.182.216.4:443?sni=93b6d804.acsnet.co": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-24T20:52:20Z",
-      "last_fail_utc": "2026-10-25T04:44:19Z"
+      "last_fail_utc": "2026-10-25T20:53:23Z"
     },
     "https://testuser1:e4b72b531a2d10900519@162.243.146.243:443?sni=a2f392f3.acsnet.co": {
       "ever_passed": true,
@@ -1109,9 +1106,8 @@
     },
     "https://138.199.35.209:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-09-29T22:17:25Z",
-      "last_fail_utc": "2026-09-30T22:18:02Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-25T20:53:23Z"
     },
     "vless://8344360f-0349-4784-a19f-33fd92e89389@api.w2m.ink:443?allowInsecure=1&host=api.w2m.ink&path=%2Fv2&security=tls&sni=api.w2m.ink&type=ws": {
       "ever_passed": false,
@@ -1385,9 +1381,9 @@
     },
     "https://138.199.35.206:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-24T20:52:20Z",
-      "last_fail_utc": "2026-10-25T04:44:19Z"
+      "last_fail_utc": "2026-10-25T20:53:23Z"
     },
     "https://null:null@138.199.35.212:9002?allowInsecure=1&sni=138.199.35.212": {
       "ever_passed": true,
@@ -2551,9 +2547,8 @@
     },
     "https://138.199.35.213:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-22T11:56:03Z",
-      "last_fail_utc": "2026-10-23T11:42:25Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-25T20:53:23Z"
     },
     "https://23.133.176.14:443?allowInsecure=1": {
       "ever_passed": true,
@@ -2604,6 +2599,14 @@
       "fail_streak": 0
     },
     "https://Ok5vbmU%3D:@jewelscollecti.icu:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://bnVsbDpudWxs:@fan.365747.xyz:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://5d7b401c-78fa-4254-872e-6d42bf7e75ec@saas.sin.fan:2096?fp=chrome&host=vp6.1145678.xyz&path=%2Ftest&security=tls&sni=vp6.1145678.xyz&type=ws": {
       "ever_passed": false,
       "fail_streak": 0
     }
