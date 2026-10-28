@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-28T12:58:18Z"
+      "last_pass_utc": "2026-10-28T22:37:21Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -1007,7 +1007,7 @@
     "https://bnVsbDpudWxs:@fan.571589.xyz:443": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-28T12:58:18Z"
+      "last_pass_utc": "2026-10-28T22:37:21Z"
     },
     "https://null:null@138.199.35.196:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -1173,9 +1173,9 @@
     },
     "https://fan.587475.xyz:443?sni=fan.587475.xyz": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-10-27T22:15:58Z",
-      "last_fail_utc": "2026-10-28T12:58:18Z"
+      "last_fail_utc": "2026-10-28T22:37:21Z"
     },
     "vless://e9d9f06f-d5dd-460a-998f-52efc4732636@172.64.144.180:8880?host=bitter-meadow-1d60.313-0f9.workers.dev&path=%2Fpyip%3DProxyIP.SG.CMLiussss.net&security=none&type=ws": {
       "ever_passed": false,
@@ -1905,8 +1905,9 @@
     },
     "https://54.190.176.228:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-28T12:58:18Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-28T12:58:18Z",
+      "last_fail_utc": "2026-10-28T22:37:21Z"
     },
     "https://384d1b42-655f-11ed-a8bf-f23c91cfbbc9:384d1b42-655f-11ed-a8bf-f23c91cfbbc9@0cd5cc27-t9zts0-tazlv3-11p9g.se.oshuawei.com:443?allowInsecure=1&sni=0cd5cc27-t9zts0-tazlv3-11p9g.se.oshuawei.com": {
       "ever_passed": true,
@@ -2670,8 +2671,9 @@
     },
     "vless://5d7b401c-78fa-4254-872e-6d42bf7e75ec@saas.sin.fan:443?allowInsecure=1&fp=chrome&host=vp26.1145678.xyz&path=%2Fdetail%2Fvideo%2FTkZDG0RVE1kPREsSEQ8YEEBHSEpZUwhIFF4WRBIIFUkVRQQQRhNYEFASC0FbR1ZETQ9cXUZAQ1laV0cXFBJEXFtQDlQCA1JSBEpYElFeVhQDWV0SQwEWQlpGWRoNA1IbARk%3D&security=tls&sni=vp26.1145678.xyz&type=ws": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-10-28T12:58:18Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-28T12:58:18Z",
+      "last_fail_utc": "2026-10-28T22:37:21Z"
     },
     "vless://14cfea1a-e7b2-4f27-b46e-34c9efabf198@[2407:cdc0:d010:27bd::]:30454?flow=xtls-rprx-vision&fp=chrome&pbk=I4WlCiks92rMzYTBZ3T_iDHU-kQX1bUW7jVIsjiklUE&security=reality&sid=4e4d7529&sni=www.samsung.com&type=tcp": {
       "ever_passed": false,
@@ -2683,8 +2685,31 @@
     },
     "https://24.225.10.211:443?allowInsecure=1": {
       "ever_passed": true,
+      "fail_streak": 1,
+      "last_pass_utc": "2026-10-28T12:58:18Z",
+      "last_fail_utc": "2026-10-28T22:37:21Z"
+    },
+    "vmess:{\"add\":\"35.74.153.167\",\"aid\":0,\"host\":\"gathered-fat-gsm-weekend.trycloudflare.com\",\"id\":\"284c8008-5a85-4451-a8d1-b79c62f74d32\",\"net\":\"ws\",\"path\":\"/vmess-argo\",\"port\":443,\"scy\":\"auto\",\"sni\":\"gathered-fat-gsm-weekend.trycloudflare.com\",\"tls\":\"tls\",\"type\":\"none\",\"v\":\"2\"}": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://mmgr.club:443?sni=mmgr.club": {
+      "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-10-28T12:58:18Z"
+      "last_pass_utc": "2026-10-28T22:37:21Z"
+    },
+    "https://64.98.50.100:443?allowInsecure=1": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-10-28T22:37:21Z"
+    },
+    "vless://5d7b401c-78fa-4254-872e-6d42bf7e75ec@saas.sin.fan:2083?fp=chrome&host=vp14.1145678.xyz&path=%2Fcommunity%2Fredirect.html&security=tls&sni=vp14.1145678.xyz&type=ws": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://2d1ad594-80a4-4bfb-87a6-038e39701f51@sg2-8sb.6121999.dpdns.org:19825?flow=xtls-rprx-vision&fp=random&pbk=GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI&security=reality&sid=6ba85179e30d4fc2&sni=sg2-8sb.6121999.dpdns.org&type=tcp": {
+      "ever_passed": false,
+      "fail_streak": 0
     }
   }
 }
