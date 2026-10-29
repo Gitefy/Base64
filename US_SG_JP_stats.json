@@ -11,8 +11,8 @@
   "retired_sources_count": 6,
   "retired_this_run": [],
   "manual_seed_nodes": 3,
-  "previous_github_nodes": 6,
-  "source_nodes": 24,
+  "previous_github_nodes": 7,
+  "source_nodes": 19,
   "jikun_source_nodes": 0,
   "jikun_clash_proxies": 0,
   "jikun_extra_source_nodes": 0,
@@ -25,7 +25,7 @@
   "mitce_clash_proxies": 0,
   "abyss_source_nodes": 0,
   "abyss_clash_proxies": 0,
-  "filtered_unique": 14,
+  "filtered_unique": 16,
   "testable": 11,
   "usable": 4,
   "strict_selected": 4,
@@ -71,9 +71,9 @@
     "JP": 1
   },
   "selected_latency_ms": {
-    "min": 298,
-    "max": 1020,
-    "median": 801
+    "min": 585,
+    "max": 1698,
+    "median": 1421
   },
-  "generated_at_utc": "2026-10-28T22:37:21Z"
+  "generated_at_utc": "2026-10-29T05:51:09Z"
 }
