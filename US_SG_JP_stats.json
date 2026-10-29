@@ -25,12 +25,12 @@
   "mitce_clash_proxies": 0,
   "abyss_source_nodes": 0,
   "abyss_clash_proxies": 0,
-  "filtered_unique": 16,
-  "testable": 11,
-  "usable": 4,
-  "strict_selected": 4,
+  "filtered_unique": 17,
+  "testable": 12,
+  "usable": 5,
+  "strict_selected": 5,
   "grace_retained": 3,
-  "selected": 7,
+  "selected": 8,
   "test_location": "china-vps-self-hosted",
   "probe_binary": "/opt/china-probe/mihomo",
   "probe_routing_mark": 524288,
@@ -46,12 +46,12 @@
   "max_delay_ms": 3000,
   "endpoint_duplicates_removed": 0,
   "usable_by_country": {
-    "US": 2,
+    "US": 3,
     "SG": 1,
     "JP": 1
   },
   "strict_selected_by_country": {
-    "US": 2,
+    "US": 3,
     "SG": 1,
     "JP": 1
   },
@@ -61,19 +61,19 @@
     "JP": 1
   },
   "selected_by_country": {
-    "US": 4,
+    "US": 5,
     "SG": 1,
     "JP": 2
   },
   "quota_if_capped": {
-    "US": 2,
+    "US": 3,
     "SG": 1,
     "JP": 1
   },
   "selected_latency_ms": {
-    "min": 585,
-    "max": 1698,
-    "median": 1421
+    "min": 926,
+    "max": 1856,
+    "median": 1571
   },
-  "generated_at_utc": "2026-10-29T05:51:09Z"
+  "generated_at_utc": "2026-10-29T13:04:45Z"
 }
