@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-11-02T06:08:33Z"
+      "last_pass_utc": "2026-11-03T14:18:38Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -139,9 +139,9 @@
     },
     "https://fan.226278.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 2,
+      "fail_streak": 3,
       "last_pass_utc": "2026-10-25T20:53:23Z",
-      "last_fail_utc": "2026-10-26T13:07:00Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "https://null:null@jewelscollecti.icu:443?sni=jewelscollecti.icu": {
       "ever_passed": false,
@@ -572,9 +572,9 @@
     },
     "https://154.26.139.24:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-01T22:03:58Z",
-      "last_fail_utc": "2026-11-02T06:08:33Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "https://fan.571589.xyz:443?allowInsecure=1": {
       "ever_passed": true,
@@ -1194,9 +1194,9 @@
     },
     "https://71.43.26.234:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-01T22:03:58Z",
-      "last_fail_utc": "2026-11-02T06:08:33Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "https://172.64.69.89:443?allowInsecure=1": {
       "ever_passed": true,
@@ -1769,9 +1769,9 @@
     },
     "https://12.202.180.10:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-01T22:03:58Z",
-      "last_fail_utc": "2026-11-02T06:08:33Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@2610sgdodo.volkvpn.com:39179?flow=xtls-rprx-vision&fp=safari&pbk=Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik&security=reality&sid=28f5c1f8f98a&sni=www.lamer.com.sg&type=tcp": {
       "ever_passed": false,
@@ -1819,9 +1819,9 @@
     },
     "https://45.145.73.240:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
+      "fail_streak": 3,
       "last_pass_utc": "2026-10-29T05:51:09Z",
-      "last_fail_utc": "2026-10-30T05:52:04Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "vmess:{\"add\":\"cdn.sfacg.uk\",\"aid\":0,\"host\":\"or3.sfacg.uk\",\"id\":\"ac251237-576f-40c8-a543-554960c958b1\",\"net\":\"ws\",\"path\":\"/or3\",\"port\":2083,\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"tls\",\"type\":\"none\",\"v\":\"2\"}": {
       "ever_passed": true,
@@ -1853,9 +1853,9 @@
     },
     "https://138.199.35.212:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 3,
+      "fail_streak": 4,
       "last_pass_utc": "2026-10-10T05:55:41Z",
-      "last_fail_utc": "2026-10-24T20:52:20Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "https://138.199.35.214:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -1893,8 +1893,9 @@
     },
     "https://null:null@fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-02T06:08:33Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-02T06:08:33Z",
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "https://138.199.35.220:9002?allowInsecure=1": {
       "ever_passed": false,
@@ -1950,9 +1951,9 @@
     },
     "https://38.247.141.135:443?allowInsecure=1&sni=38.247.141.135": {
       "ever_passed": true,
-      "fail_streak": 2,
+      "fail_streak": 3,
       "last_pass_utc": "2026-10-11T12:53:20Z",
-      "last_fail_utc": "2026-10-12T06:01:18Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "https://44.229.69.166:8443?allowInsecure=1": {
       "ever_passed": true,
@@ -2350,9 +2351,9 @@
     },
     "https://148.135.10.80:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-01T22:03:58Z",
-      "last_fail_utc": "2026-11-02T06:08:33Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "https://jewelscollecti.icu:443?allowInsecure=1": {
       "ever_passed": true,
@@ -2376,9 +2377,9 @@
     },
     "https://35.84.133.236:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-01T22:03:58Z",
-      "last_fail_utc": "2026-11-02T06:08:33Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:56656?allowInsecure=1&flow=xtls-rprx-vision&fp=ios&pbk=QFM3jTzb5n-E9L2cfFo6GHqioGmIkjmG60l8wXA4IXc&security=reality&sid=aae6d935&sni=cdn-dynmedia-1.microsoft.com&type=tcp": {
       "ever_passed": false,
@@ -2527,9 +2528,9 @@
     },
     "https://12.221.146.147:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-01T22:03:58Z",
-      "last_fail_utc": "2026-11-02T06:08:33Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "https://webdrone.club:443?sni=webdrone.club": {
       "ever_passed": false,
@@ -2852,11 +2853,15 @@
     },
     "https://172.64.68.89:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-01T22:03:58Z",
-      "last_fail_utc": "2026-11-02T06:08:33Z"
+      "last_fail_utc": "2026-11-03T14:18:38Z"
     },
     "https://null:null@tzoa.fun:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "vless://5d7b401c-78fa-4254-872e-6d42bf7e75ec@saas.sin.fan:2096?fp=chrome&host=vp9.1145678.xyz&path=%2Fthread%2Flist&security=tls&sni=vp9.1145678.xyz&type=ws": {
       "ever_passed": false,
       "fail_streak": 0
     }
