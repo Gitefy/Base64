@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-11-05T06:50:41Z"
+      "last_pass_utc": "2026-11-05T19:58:38Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -962,9 +962,9 @@
     },
     "https://null:null@138.199.35.217:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
+      "fail_streak": 3,
       "last_pass_utc": "2026-10-20T04:53:26Z",
-      "last_fail_utc": "2026-10-20T17:10:22Z"
+      "last_fail_utc": "2026-11-05T19:58:38Z"
     },
     "https://null:None@fullmanfirm.icu:443?allowInsecure=1": {
       "ever_passed": false,
@@ -1194,8 +1194,9 @@
     },
     "https://71.43.26.234:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-05T06:50:41Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-05T06:50:41Z",
+      "last_fail_utc": "2026-11-05T19:58:38Z"
     },
     "https://172.64.69.89:443?allowInsecure=1": {
       "ever_passed": true,
@@ -1225,9 +1226,8 @@
     },
     "https://138.199.35.198:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-22T11:56:03Z",
-      "last_fail_utc": "2026-10-23T11:42:25Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-05T19:58:38Z"
     },
     "vless://b1c31d36-c6b5-414b-88d2-9e24e7bfcca3@104.24.43.44:443?fp=chrome&host=www.nihaoyun.top&path=%2F&security=tls&sni=www.nihaoyun.top&type=ws": {
       "ever_passed": false,
@@ -1243,9 +1243,9 @@
     },
     "https://137.175.22.96:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-04T19:47:05Z",
-      "last_fail_utc": "2026-11-05T06:50:41Z"
+      "last_fail_utc": "2026-11-05T19:58:38Z"
     },
     "vless://399b6b23-cc40-4831-a494-61948e2df133@jp.sofast.live:52683?security=none&type=tcp": {
       "ever_passed": false,
@@ -1810,9 +1810,9 @@
     },
     "https://bnVsbDpudWxs:@webdrone.club:443": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-04T19:47:05Z",
-      "last_fail_utc": "2026-11-05T06:50:41Z"
+      "last_fail_utc": "2026-11-05T19:58:38Z"
     },
     "vless://3d7b3136-de73-4547-b29b-e439f2fc91c0@defrnode.xyy123.bid:443?flow=xtls-rprx-vision&fp=chrome&pbk=XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE&security=reality&sid=132fa975c199b269&sni=mp3recs.amazon.com&type=tcp": {
       "ever_passed": true,
@@ -1891,14 +1891,15 @@
       "fail_streak": 0
     },
     "https://173.42.49.102:8090?allowInsecure=1": {
-      "ever_passed": false,
-      "fail_streak": 0
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-05T19:58:38Z"
     },
     "https://null:null@fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-04T19:47:05Z",
-      "last_fail_utc": "2026-11-05T06:50:41Z"
+      "last_fail_utc": "2026-11-05T19:58:38Z"
     },
     "https://138.199.35.220:9002?allowInsecure=1": {
       "ever_passed": false,
@@ -2145,8 +2146,9 @@
     },
     "https://184.188.139.2:8090?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-05T06:50:41Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-05T06:50:41Z",
+      "last_fail_utc": "2026-11-05T19:58:38Z"
     },
     "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:47691?flow=xtls-rprx-vision&fp=safari&pbk=6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg&security=reality&sid=2905326a&sni=m.media-amazon.com&type=tcp": {
       "ever_passed": false,
@@ -2344,9 +2346,9 @@
     },
     "https://fan.587475.xyz:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-04T19:47:05Z",
-      "last_fail_utc": "2026-11-05T06:50:41Z"
+      "last_fail_utc": "2026-11-05T19:58:38Z"
     },
     "https://137.175.22.45:443?allowInsecure=1": {
       "ever_passed": false,
@@ -2889,8 +2891,9 @@
     },
     "https://null:null@fan.365747.xyz:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-05T06:50:41Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-05T06:50:41Z",
+      "last_fail_utc": "2026-11-05T19:58:38Z"
     },
     "https://berniesbodybla.fun:443?allowInsecure=1": {
       "ever_passed": false,
@@ -2898,8 +2901,27 @@
     },
     "https://138.199.35.196:9002?allowInsecure=1": {
       "ever_passed": true,
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-05T06:50:41Z",
+      "last_fail_utc": "2026-11-05T19:58:38Z"
+    },
+    "https://bnVsbDpudWxs:@purecambogiasl.live:443": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://Ok5vbmU%3D:@purecambogiasl.live:443?allowInsecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://68.235.56.51:443?allowInsecure=1": {
+      "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-11-05T06:50:41Z"
+      "last_pass_utc": "2026-11-05T19:58:38Z"
+    },
+    "https://Ok5vbmU%3D:@crosscards.site:443": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-05T19:58:38Z"
     }
   }
 }
