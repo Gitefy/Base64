@@ -4,7 +4,7 @@
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T22:23:24Z"
+      "last_pass_utc": "2026-11-10T07:21:35Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -611,9 +611,9 @@
     },
     "https://fan.587475.xyz:443?allowInsecure=1&sni=fan.587475.xyz": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-09T06:34:29Z",
-      "last_fail_utc": "2026-11-09T22:23:24Z"
+      "last_fail_utc": "2026-11-10T07:21:35Z"
     },
     "https://null:null@fan.596189.xyz:443?allowInsecure=1": {
       "ever_passed": true,
@@ -1299,8 +1299,9 @@
     },
     "https://null:None@138.199.35.206:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T22:23:24Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-09T22:23:24Z",
+      "last_fail_utc": "2026-11-10T07:21:35Z"
     },
     "https://138.199.35.197:9002?allowInsecure=1&sni=138.199.35.197": {
       "ever_passed": true,
@@ -1748,8 +1749,9 @@
     },
     "https://null:null@138.199.35.216:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T22:23:24Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-09T22:23:24Z",
+      "last_fail_utc": "2026-11-10T07:21:35Z"
     },
     "https://null:null@zebpay.site:443": {
       "ever_passed": false,
@@ -1897,8 +1899,9 @@
     },
     "https://null:null@fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T22:23:24Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-09T22:23:24Z",
+      "last_fail_utc": "2026-11-10T07:21:35Z"
     },
     "https://138.199.35.220:9002?allowInsecure=1": {
       "ever_passed": false,
@@ -2897,8 +2900,9 @@
     },
     "https://138.199.35.196:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T22:23:24Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-09T22:23:24Z",
+      "last_fail_utc": "2026-11-10T07:21:35Z"
     },
     "https://bnVsbDpudWxs:@purecambogiasl.live:443": {
       "ever_passed": false,
@@ -2946,9 +2950,9 @@
     },
     "https://null:null@24.142.229.178:8090?allowInsecure=1&sni=24.142.229.178": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-09T06:34:29Z",
-      "last_fail_utc": "2026-11-09T22:23:24Z"
+      "last_fail_utc": "2026-11-10T07:21:35Z"
     },
     "https://null:None@138.199.35.209:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -2984,8 +2988,9 @@
     },
     "https://null:null@184.188.139.2:8090?allowInsecure=1&sni=184.188.139.2": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T22:23:24Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-09T22:23:24Z",
+      "last_fail_utc": "2026-11-10T07:21:35Z"
     },
     "https://null:null@zebpay.site:443?sni=zebpay.site": {
       "ever_passed": false,
@@ -2993,9 +2998,9 @@
     },
     "https://133.18.200.207:343?allowInsecure=1&sni=133.18.200.207": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-09T06:34:29Z",
-      "last_fail_utc": "2026-11-09T22:23:24Z"
+      "last_fail_utc": "2026-11-10T07:21:35Z"
     },
     "vless://5d7b401c-78fa-4254-872e-6d42bf7e75ec@saas.sin.fan:443?allowInsecure=1&fp=chrome&host=v2n6.11676767.xyz&path=%2Franking%2Fhtm&security=tls&sni=v2n6.11676767.xyz&type=ws": {
       "ever_passed": false,
@@ -3017,8 +3022,35 @@
     },
     "trojan://F3NzMNuYnG7akU2mSlBY@193.123.160.109:8443?allowInsecure=1&sni=www.microsoft.com&type=tcp": {
       "ever_passed": true,
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-09T22:23:24Z",
+      "last_fail_utc": "2026-11-10T07:21:35Z"
+    },
+    "https://137.175.22.88:443?allowInsecure=1&sni=137.175.22.88": {
+      "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T22:23:24Z"
+      "last_pass_utc": "2026-11-10T07:21:35Z"
+    },
+    "https://null:null@120.232.204.58:40583?allowInsecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:null@24.142.229.178:8090?allowInsecure=1": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://154.26.139.24:443?allowInsecure=1&sni=154.26.139.24": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "trojan://a75243d0f5c2e31bd6c8c118b4f6442f81ad@176.122.173.224:443?allowInsecure=1&sni=www.cloudflare.com&type=tcp": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-10T07:21:35Z"
+    },
+    "vless://5d7b401c-78fa-4254-872e-6d42bf7e75ec@saas.sin.fan:443?allowInsecure=1&fp=chrome&host=v1n6.11676767.xyz&path=%2Fdetail%2Ftorrent&security=tls&sni=v1n6.11676767.xyz&type=ws": {
+      "ever_passed": false,
+      "fail_streak": 0
     }
   }
 }
