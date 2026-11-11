@@ -11,8 +11,8 @@
   "retired_sources_count": 6,
   "retired_this_run": [],
   "manual_seed_nodes": 3,
-  "previous_github_nodes": 7,
-  "source_nodes": 19,
+  "previous_github_nodes": 10,
+  "source_nodes": 22,
   "jikun_source_nodes": 0,
   "jikun_clash_proxies": 0,
   "jikun_extra_source_nodes": 0,
@@ -25,12 +25,12 @@
   "mitce_clash_proxies": 0,
   "abyss_source_nodes": 0,
   "abyss_clash_proxies": 0,
-  "filtered_unique": 17,
-  "testable": 11,
-  "usable": 6,
-  "strict_selected": 6,
-  "grace_retained": 4,
-  "selected": 10,
+  "filtered_unique": 28,
+  "testable": 21,
+  "usable": 12,
+  "strict_selected": 12,
+  "grace_retained": 5,
+  "selected": 17,
   "test_location": "china-vps-self-hosted",
   "probe_binary": "/opt/china-probe/mihomo",
   "probe_routing_mark": 524288,
@@ -46,34 +46,34 @@
   "max_delay_ms": 3000,
   "endpoint_duplicates_removed": 0,
   "usable_by_country": {
-    "US": 3,
+    "US": 11,
     "SG": 0,
-    "JP": 3
+    "JP": 1
   },
   "strict_selected_by_country": {
-    "US": 3,
+    "US": 11,
     "SG": 0,
-    "JP": 3
+    "JP": 1
   },
   "grace_retained_by_country": {
     "US": 3,
     "SG": 0,
-    "JP": 1
+    "JP": 2
   },
   "selected_by_country": {
-    "US": 6,
-    "SG": 0,
-    "JP": 4
-  },
-  "quota_if_capped": {
-    "US": 3,
+    "US": 14,
     "SG": 0,
     "JP": 3
   },
-  "selected_latency_ms": {
-    "min": 232,
-    "max": 1109,
-    "median": 635
+  "quota_if_capped": {
+    "US": 11,
+    "SG": 0,
+    "JP": 1
   },
-  "generated_at_utc": "2026-11-11T06:25:57Z"
+  "selected_latency_ms": {
+    "min": 297,
+    "max": 1614,
+    "median": 1312
+  },
+  "generated_at_utc": "2026-11-11T19:38:21Z"
 }
