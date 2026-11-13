@@ -1,6 +1,6 @@
 {
   "source_v2ray": "https://234.qzz.io/fsllist64",
-  "source_clash": "https://234.qzz.io/fsllistyaml",
+  "source_clash": "https://isdo.dpdns.org/fsllistyaml",
   "source_jikun": "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3",
   "source_jikun_extra": "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3",
   "source_jikun_third": "https://jikun.zmxoo.xyz/subapi?token=free_3yGzINPbgT2HQEp&placeholder=1&placeholder=2&placeholder=3",
@@ -11,7 +11,7 @@
   "retired_sources_count": 6,
   "retired_this_run": [],
   "manual_seed_nodes": 3,
-  "previous_github_nodes": 7,
+  "previous_github_nodes": 8,
   "source_nodes": 23,
   "jikun_source_nodes": 0,
   "jikun_clash_proxies": 0,
@@ -25,12 +25,12 @@
   "mitce_clash_proxies": 0,
   "abyss_source_nodes": 0,
   "abyss_clash_proxies": 0,
-  "filtered_unique": 17,
-  "testable": 11,
-  "usable": 4,
-  "strict_selected": 4,
-  "grace_retained": 4,
-  "selected": 8,
+  "filtered_unique": 29,
+  "testable": 22,
+  "usable": 15,
+  "strict_selected": 15,
+  "grace_retained": 3,
+  "selected": 18,
   "test_location": "china-vps-self-hosted",
   "probe_binary": "/opt/china-probe/mihomo",
   "probe_routing_mark": 524288,
@@ -44,36 +44,36 @@
   "required_success_rounds": 2,
   "grace_fail_runs": 1,
   "max_delay_ms": 3000,
-  "endpoint_duplicates_removed": 0,
+  "endpoint_duplicates_removed": 1,
   "usable_by_country": {
-    "US": 4,
+    "US": 14,
     "SG": 0,
-    "JP": 0
+    "JP": 1
   },
   "strict_selected_by_country": {
-    "US": 4,
+    "US": 14,
     "SG": 0,
-    "JP": 0
+    "JP": 1
   },
   "grace_retained_by_country": {
     "US": 3,
     "SG": 0,
-    "JP": 1
+    "JP": 0
   },
   "selected_by_country": {
-    "US": 7,
+    "US": 17,
     "SG": 0,
     "JP": 1
   },
   "quota_if_capped": {
-    "US": 4,
+    "US": 14,
     "SG": 0,
-    "JP": 0
+    "JP": 1
   },
   "selected_latency_ms": {
-    "min": 1694,
-    "max": 2408,
-    "median": 2003
+    "min": 301,
+    "max": 1352,
+    "median": 1235
   },
-  "generated_at_utc": "2026-11-13T06:48:14Z"
+  "generated_at_utc": "2026-11-13T19:44:31Z"
 }
