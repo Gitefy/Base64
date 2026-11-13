@@ -3,9 +3,9 @@
   "nodes": {
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
-      "fail_streak": 5,
+      "fail_streak": 6,
       "last_pass_utc": "2026-11-10T07:21:35Z",
-      "last_fail_utc": "2026-11-12T19:56:08Z"
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -53,9 +53,9 @@
     },
     "https://null:null@fan.571589.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-12T07:14:23Z",
-      "last_fail_utc": "2026-11-12T19:56:08Z"
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "vless://5be7fb02-b6a5-450f-b041-3243b98e8420@72.56.41.33:40443?flow=xtls-rprx-vision&fp=firefox&pbk=Uvj5H9pDJP0HX2bN7NN7sCQwVCrC5N2NbKf-yuy1ikE&security=reality&sid=ee33&sni=deepl.com&type=tcp": {
       "ever_passed": false,
@@ -612,8 +612,9 @@
     },
     "https://fan.587475.xyz:443?allowInsecure=1&sni=fan.587475.xyz": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-12T19:56:08Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-12T19:56:08Z",
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "https://null:null@fan.596189.xyz:443?allowInsecure=1": {
       "ever_passed": true,
@@ -652,9 +653,9 @@
     },
     "https://fan.587475.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 2,
+      "fail_streak": 3,
       "last_pass_utc": "2026-10-16T21:11:46Z",
-      "last_fail_utc": "2026-10-18T04:36:52Z"
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "https://138.199.35.215:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -798,9 +799,9 @@
     },
     "https://null:None@138.199.35.219:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-12T07:14:23Z",
-      "last_fail_utc": "2026-11-12T19:56:08Z"
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "vless://a1a6a3be-2bf9-46a2-bc24-328306e49ab7@172.67.220.58:443?allowInsecure=1&host=7-M17.KuWAit.kdNS.fR&path=%2FfVs1qv0xm8dxmnwuaPwokxgY4XlP&security=tls&sni=7-m17.kUWaIT.kDnS.Fr&type=ws": {
       "ever_passed": false,
@@ -1174,9 +1175,9 @@
     },
     "https://fan.587475.xyz:443?sni=fan.587475.xyz": {
       "ever_passed": true,
-      "fail_streak": 2,
+      "fail_streak": 3,
       "last_pass_utc": "2026-10-27T22:15:58Z",
-      "last_fail_utc": "2026-10-28T22:37:21Z"
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "vless://e9d9f06f-d5dd-460a-998f-52efc4732636@172.64.144.180:8880?host=bitter-meadow-1d60.313-0f9.workers.dev&path=%2Fpyip%3DProxyIP.SG.CMLiussss.net&security=none&type=ws": {
       "ever_passed": false,
@@ -1259,8 +1260,9 @@
     },
     "https://149.34.248.65:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-12T19:56:08Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-12T19:56:08Z",
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "vless://5567cac6-2a32-4318-83cd-7df3a9eebbd7@35.185.179.62:443?fp=chrome&pbk=hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4&security=reality&sid=eb97ce837da2f6ad&sni=www.cloudflare.com&type=tcp": {
       "ever_passed": true,
@@ -1300,8 +1302,9 @@
     },
     "https://null:None@138.199.35.206:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-12T19:56:08Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-12T19:56:08Z",
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "https://138.199.35.197:9002?allowInsecure=1&sni=138.199.35.197": {
       "ever_passed": true,
@@ -1387,9 +1390,8 @@
     },
     "https://138.199.35.206:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-24T20:52:20Z",
-      "last_fail_utc": "2026-10-25T20:53:23Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-13T06:48:14Z"
     },
     "https://null:null@138.199.35.212:9002?allowInsecure=1&sni=138.199.35.212": {
       "ever_passed": true,
@@ -1893,9 +1895,8 @@
     },
     "https://173.42.49.102:8090?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-11-05T19:58:38Z",
-      "last_fail_utc": "2026-11-07T06:00:27Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-13T06:48:14Z"
     },
     "https://null:null@fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
@@ -2003,9 +2004,8 @@
     },
     "https://129.153.93.183:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-10-30T22:22:57Z",
-      "last_fail_utc": "2026-10-31T12:34:40Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-13T06:48:14Z"
     },
     "ss://YWVzLTEyOC1nY206YzJmZTkwMjQtZDI1My00MDFhLWI4NjgtOTc0MjFmNmViOWUw@ruot.ayucloudservices.nl:40025": {
       "ever_passed": false,
@@ -2340,13 +2340,15 @@
     },
     "https://149.88.21.140:9443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-12T19:56:08Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-12T19:56:08Z",
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "https://fan.587475.xyz:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T06:34:29Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-09T06:34:29Z",
+      "last_fail_utc": "2026-11-13T06:48:14Z"
     },
     "https://137.175.22.45:443?allowInsecure=1": {
       "ever_passed": false,
@@ -3128,8 +3130,14 @@
     },
     "https://138.199.35.213:9002?allowInsecure=1&sni=138.199.35.213": {
       "ever_passed": true,
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-12T19:56:08Z",
+      "last_fail_utc": "2026-11-13T06:48:14Z"
+    },
+    "https://71.43.26.234:443?allowInsecure=1&sni=71.43.26.234": {
+      "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-11-12T19:56:08Z"
+      "last_pass_utc": "2026-11-13T06:48:14Z"
     }
   }
 }
