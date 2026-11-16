@@ -3,9 +3,9 @@
   "nodes": {
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
-      "fail_streak": 12,
+      "fail_streak": 13,
       "last_pass_utc": "2026-11-10T07:21:35Z",
-      "last_fail_utc": "2026-11-15T18:53:11Z"
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -555,9 +555,8 @@
     },
     "https://null:null@fan.365747.xyz:443": {
       "ever_passed": true,
-      "fail_streak": 6,
-      "last_pass_utc": "2026-10-22T17:12:40Z",
-      "last_fail_utc": "2026-11-01T06:09:06Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-16T06:33:09Z"
     },
     "https://138.199.35.204:9002?allowInsecure=1": {
       "ever_passed": true,
@@ -832,8 +831,9 @@
     },
     "https://null:null@138.199.35.199:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "vless://87c467e9-f0af-4b03-8fbd-65fd375d3a26@172.64.144.252:443?fp=randomized&host=pmpmppm.pages.dev&path=%2F%3Fed%3D2048&security=tls&sni=pmpmppm.pages.dev&type=ws": {
       "ever_passed": false,
@@ -978,8 +978,9 @@
     },
     "https://null:None@138.199.35.216:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://bnVsbDpudWxs:@fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
@@ -1077,8 +1078,9 @@
     },
     "https://138.199.35.196:9002?allowInsecure=1&sni=138.199.35.196": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "vless://8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3@family.bucket.x1.kfc-520.com:10202?allowInsecure=1&flow=xtls-rprx-vision&fp=firefox&pbk=E0R7f_nEkbcnc97Z82aDMo2bUVGgcIzChCVYwsQmXnc&security=reality&sid=88bd7f&sni=www.apple.com&type=tcp": {
       "ever_passed": true,
@@ -1132,8 +1134,9 @@
     },
     "https://null:null@138.199.35.195:9002?allowInsecure=1&sni=138.199.35.195": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://goedkoopgeluid.icu:443?allowInsecure=1&sni=goedkoopgeluid.icu": {
       "ever_passed": false,
@@ -1195,9 +1198,8 @@
     },
     "https://71.43.26.234:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-11-05T06:50:41Z",
-      "last_fail_utc": "2026-11-06T19:26:18Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-16T06:33:09Z"
     },
     "https://172.64.69.89:443?allowInsecure=1": {
       "ever_passed": true,
@@ -1396,9 +1398,8 @@
     },
     "https://null:null@138.199.35.212:9002?allowInsecure=1&sni=138.199.35.212": {
       "ever_passed": true,
-      "fail_streak": 3,
-      "last_pass_utc": "2026-10-03T16:20:01Z",
-      "last_fail_utc": "2026-10-13T14:14:44Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-16T06:33:09Z"
     },
     "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfr.alixxplay.com:51177?flow=xtls-rprx-vision&fp=ios&pbk=ztQ8VYq_dVDc3x-QM8LXjup2161CirYrIBE1F7loVzQ&security=reality&sid=6772eb2b7a&sni=cdn-dynmedia-1.microsoft.com&type=tcp": {
       "ever_passed": true,
@@ -1590,9 +1591,8 @@
     },
     "https://38.28.193.1:443?allowInsecure=1&sni=38.28.193.1": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-11-13T19:44:31Z",
-      "last_fail_utc": "2026-11-14T18:05:39Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-16T06:33:09Z"
     },
     "https://138.199.35.199:9002?allowInsecure=1&sni=138.199.35.199": {
       "ever_passed": true,
@@ -1866,9 +1866,9 @@
     },
     "https://138.199.35.214:9002?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-15T06:36:16Z",
-      "last_fail_utc": "2026-11-15T18:53:11Z"
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "vless://506e4a91-1d05-5683-b84c-2113f673cb19@support.zoom.us.vltj.qzz.io:443?fp=chrome&host=support.zoom.us.vltj.qzz.io&path=%2Fid-pusat&security=tls&sni=support.zoom.us.vltj.qzz.io&type=ws": {
       "ever_passed": false,
@@ -1902,13 +1902,13 @@
     },
     "https://null:null@fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
-      "fail_streak": 2,
-      "last_pass_utc": "2026-11-09T22:23:24Z",
-      "last_fail_utc": "2026-11-10T19:45:21Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-16T06:33:09Z"
     },
     "https://138.199.35.220:9002?allowInsecure=1": {
-      "ever_passed": false,
-      "fail_streak": 0
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-16T06:33:09Z"
     },
     "https://162.217.114.50:443?allowInsecure=1": {
       "ever_passed": false,
@@ -1956,7 +1956,7 @@
     "https://fan.571589.xyz:443?sni=fan.571589.xyz": {
       "ever_passed": true,
       "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T22:23:24Z"
+      "last_pass_utc": "2026-11-16T06:33:09Z"
     },
     "https://38.247.141.135:443?allowInsecure=1&sni=38.247.141.135": {
       "ever_passed": true,
@@ -1990,8 +1990,9 @@
     },
     "https://fan.226278.xyz:443?allowInsecure=1&sni=fan.226278.xyz": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://null:null@138.199.35.213:9002?allowInsecure=1&sni=138.199.35.213": {
       "ever_passed": true,
@@ -2654,8 +2655,9 @@
     },
     "https://testuser1:e4b72b531a2d10900519@162.243.146.243:443?allowInsecure=1&sni=a2f392f3.acsnet.co": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://44.217.145.28:8443?allowInsecure=1": {
       "ever_passed": true,
@@ -2771,8 +2773,9 @@
     },
     "https://45.150.164.18:8443?allowInsecure=1&sni=45.150.164.18": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://null:None@crosscards.site:443": {
       "ever_passed": false,
@@ -3045,9 +3048,9 @@
     },
     "https://null:null@24.142.229.178:8090?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-15T06:36:16Z",
-      "last_fail_utc": "2026-11-15T18:53:11Z"
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://154.26.139.24:443?allowInsecure=1&sni=154.26.139.24": {
       "ever_passed": false,
@@ -3069,9 +3072,9 @@
     },
     "https://null:null@129.153.93.183:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-15T06:36:16Z",
-      "last_fail_utc": "2026-11-15T18:53:11Z"
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "trojan://0001a199-4177-4a6b-ab86-73b5fe58e1dc@54.199.94.136:443?allowInsecure=1&sni=www.bing.com&type=tcp": {
       "ever_passed": true,
@@ -3155,8 +3158,9 @@
     },
     "https://null:null@138.199.35.211:9002?allowInsecure=1&sni=138.199.35.211": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://null:null@138.199.35.218:9002?allowInsecure=1&sni=138.199.35.218": {
       "ever_passed": true,
@@ -3172,8 +3176,9 @@
     },
     "https://38.28.193.39:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://null:null@18.206.28.143:8443?allowInsecure=1&sni=18.206.28.143": {
       "ever_passed": true,
@@ -3226,9 +3231,9 @@
     },
     "https://null:null@138.199.35.200:9002?allowInsecure=1&sni=138.199.35.200": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-15T06:36:16Z",
-      "last_fail_utc": "2026-11-15T18:53:11Z"
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://137.175.77.35:443?allowInsecure=1&sni=137.175.77.35": {
       "ever_passed": false,
@@ -3236,15 +3241,14 @@
     },
     "https://null:null@138.199.35.217:9002?allowInsecure=1&sni=138.199.35.217": {
       "ever_passed": true,
-      "fail_streak": 1,
+      "fail_streak": 2,
       "last_pass_utc": "2026-11-15T06:36:16Z",
-      "last_fail_utc": "2026-11-15T18:53:11Z"
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://fan.365747.xyz:443?sni=fan.365747.xyz": {
       "ever_passed": true,
-      "fail_streak": 1,
-      "last_pass_utc": "2026-11-15T06:36:16Z",
-      "last_fail_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-16T06:33:09Z"
     },
     "https://137.175.22.16:443?allowInsecure=1&sni=137.175.22.16": {
       "ever_passed": false,
@@ -3268,13 +3272,15 @@
     },
     "https://66.153.187.90:8090?allowInsecure=1&sni=66.153.187.90": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://null:None@138.199.35.205:9002?allowInsecure=1&sni=138.199.35.205": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://38.28.185.163:443?allowInsecure=1": {
       "ever_passed": false,
@@ -3282,18 +3288,25 @@
     },
     "https://137.175.22.52:443?allowInsecure=1&sni=137.175.22.52": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://null:null@138.199.35.209:9002?allowInsecure=1&sni=138.199.35.209": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
     },
     "https://209.148.53.153:8090?allowInsecure=1&sni=209.148.53.153": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-15T18:53:11Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-15T18:53:11Z",
+      "last_fail_utc": "2026-11-16T06:33:09Z"
+    },
+    "https://38.28.185.205:443?allowInsecure=1&sni=38.28.185.205": {
+      "ever_passed": false,
+      "fail_streak": 0
     }
   }
 }
