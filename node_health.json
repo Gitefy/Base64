@@ -3,9 +3,9 @@
   "nodes": {
     "hysteria2://qtMKhrFAMrVZUfupkc5CFHmRKYtNPSjt@165.154.193.165:443?insecure=1&obfs=salamander&obfs-password=d7897b996af77eeecb7ac010361d74fb&sni=165.154.193.165": {
       "ever_passed": true,
-      "fail_streak": 22,
+      "fail_streak": 23,
       "last_pass_utc": "2026-11-10T07:21:35Z",
-      "last_fail_utc": "2026-11-20T20:24:18Z"
+      "last_fail_utc": "2026-11-21T07:11:53Z"
     },
     "vless://E87458F5-4186-41CA-A12C-8AF69A337A67@sg2-r.link-t7.com:10037?encryption=none&flow=&fp=chrome&mode=gun&pbk=wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE&security=reality&serviceName=update&sid=686c0ef0&sni=s0.awsstatic.com&type=grpc": {
       "ever_passed": true,
@@ -1379,8 +1379,9 @@
     },
     "https://24.142.229.178:8090?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-20T20:24:18Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-20T20:24:18Z",
+      "last_fail_utc": "2026-11-21T07:11:53Z"
     },
     "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfr.alixxplay.com:30322?flow=xtls-rprx-vision&fp=ios&pbk=WIQGJ43m8ym13-VZ57mAtWY5vOwHMHEpnLV8caw2-kA&security=reality&sid=f38326f99edf&sni=www.lamer.com.sg&type=tcp": {
       "ever_passed": true,
@@ -1968,9 +1969,9 @@
     },
     "https://38.247.141.135:443?allowInsecure=1&sni=38.247.141.135": {
       "ever_passed": true,
-      "fail_streak": 2,
+      "fail_streak": 3,
       "last_pass_utc": "2026-11-17T20:57:19Z",
-      "last_fail_utc": "2026-11-18T20:33:50Z"
+      "last_fail_utc": "2026-11-21T07:11:53Z"
     },
     "https://44.229.69.166:8443?allowInsecure=1": {
       "ever_passed": true,
@@ -2805,8 +2806,9 @@
     },
     "https://null:null@fan.571589.xyz:443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-20T20:24:18Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-20T20:24:18Z",
+      "last_fail_utc": "2026-11-21T07:11:53Z"
     },
     "https://null:null@54.190.176.228:8443?allowInsecure=1": {
       "ever_passed": true,
@@ -3038,8 +3040,9 @@
     },
     "https://null:null@138.199.35.216:9002?allowInsecure=1&sni=138.199.35.216": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-09T22:23:24Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-09T22:23:24Z",
+      "last_fail_utc": "2026-11-21T07:11:53Z"
     },
     "trojan://F3NzMNuYnG7akU2mSlBY@193.123.160.109:8443?allowInsecure=1&sni=www.microsoft.com&type=tcp": {
       "ever_passed": true,
@@ -3065,8 +3068,9 @@
     },
     "https://154.26.139.24:443?allowInsecure=1&sni=154.26.139.24": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-20T20:24:18Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-20T20:24:18Z",
+      "last_fail_utc": "2026-11-21T07:11:53Z"
     },
     "trojan://a75243d0f5c2e31bd6c8c118b4f6442f81ad@176.122.173.224:443?allowInsecure=1&sni=www.cloudflare.com&type=tcp": {
       "ever_passed": true,
@@ -3379,8 +3383,9 @@
     },
     "https://mrwdfNTD8M79LCukCieldrqZWqs%3D:exaxgqkKkd0TAMrCxeonWg%3D%3D@jpgmo102-cdn-route.couldflare-cdn.com:443?allowInsecure=1&sni=jpgmo102-cdn-route.couldflare-cdn.com": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-20T20:24:18Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-20T20:24:18Z",
+      "last_fail_utc": "2026-11-21T07:11:53Z"
     },
     "https://38.28.193.188:443?allowInsecure=1&sni=38.28.193.188": {
       "ever_passed": true,
@@ -3422,8 +3427,9 @@
     },
     "https://107.91.88.70:8443?allowInsecure=1": {
       "ever_passed": true,
-      "fail_streak": 0,
-      "last_pass_utc": "2026-11-20T20:24:18Z"
+      "fail_streak": 1,
+      "last_pass_utc": "2026-11-20T20:24:18Z",
+      "last_fail_utc": "2026-11-21T07:11:53Z"
     },
     "https://137.175.22.120:443?allowInsecure=1&sni=137.175.22.120": {
       "ever_passed": false,
@@ -3462,6 +3468,15 @@
       "fail_streak": 0
     },
     "vless://eb6cf336-03bd-4dac-9f2a-3e456389279e@139.162.125.126:443?fp=chrome&host=itunes.apple.com&path=%2Fws&pbk=mMLchVbQzhQ2bGV6wkg1LP5Q7eqL2hCVHHMT0B03dwg&security=reality&sid=bd6e3e70&sni=itunes.apple.com&type=ws": {
+      "ever_passed": false,
+      "fail_streak": 0
+    },
+    "https://null:null@172.64.69.89:443?allowInsecure=1&sni=172.64.69.89": {
+      "ever_passed": true,
+      "fail_streak": 0,
+      "last_pass_utc": "2026-11-21T07:11:53Z"
+    },
+    "https://null:null@38.247.141.135:443?allowInsecure=1&sni=38.247.141.135": {
       "ever_passed": false,
       "fail_streak": 0
     }
