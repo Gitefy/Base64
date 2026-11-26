@@ -1,5 +1,5 @@
 {
-  "source_v2ray": "https://234.qzz.io/fsllist64",
+  "source_v2ray": "https://isdo.dpdns.org/fsllist64",
   "source_clash": "https://234.qzz.io/fsllistyaml",
   "source_jikun": "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3",
   "source_jikun_extra": "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3",
@@ -11,8 +11,8 @@
   "retired_sources_count": 6,
   "retired_this_run": [],
   "manual_seed_nodes": 3,
-  "previous_github_nodes": 12,
-  "source_nodes": 17,
+  "previous_github_nodes": 11,
+  "source_nodes": 23,
   "jikun_source_nodes": 0,
   "jikun_clash_proxies": 0,
   "jikun_extra_source_nodes": 0,
@@ -25,12 +25,12 @@
   "mitce_clash_proxies": 0,
   "abyss_source_nodes": 0,
   "abyss_clash_proxies": 0,
-  "filtered_unique": 22,
-  "testable": 12,
-  "usable": 6,
-  "strict_selected": 6,
+  "filtered_unique": 35,
+  "testable": 27,
+  "usable": 11,
+  "strict_selected": 11,
   "grace_retained": 5,
-  "selected": 11,
+  "selected": 16,
   "test_location": "china-vps-self-hosted",
   "probe_binary": "/opt/china-probe/mihomo",
   "probe_routing_mark": 524288,
@@ -44,36 +44,36 @@
   "required_success_rounds": 2,
   "grace_fail_runs": 1,
   "max_delay_ms": 3000,
-  "endpoint_duplicates_removed": 1,
+  "endpoint_duplicates_removed": 2,
   "usable_by_country": {
-    "US": 6,
+    "US": 11,
     "SG": 0,
     "JP": 0
   },
   "strict_selected_by_country": {
-    "US": 6,
+    "US": 11,
     "SG": 0,
     "JP": 0
   },
   "grace_retained_by_country": {
-    "US": 4,
+    "US": 5,
     "SG": 0,
-    "JP": 1
+    "JP": 0
   },
   "selected_by_country": {
-    "US": 10,
+    "US": 16,
     "SG": 0,
-    "JP": 1
+    "JP": 0
   },
   "quota_if_capped": {
-    "US": 6,
+    "US": 11,
     "SG": 0,
     "JP": 0
   },
   "selected_latency_ms": {
-    "min": 508,
-    "max": 1372,
-    "median": 1314
+    "min": 881,
+    "max": 2180,
+    "median": 1612
   },
-  "generated_at_utc": "2026-11-25T21:43:36Z"
+  "generated_at_utc": "2026-11-26T08:22:43Z"
 }
