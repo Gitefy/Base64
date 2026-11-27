@@ -1,6 +1,6 @@
 {
   "source_v2ray": "https://234.qzz.io/fsllist64",
-  "source_clash": "https://234.qzz.io/fsllistyaml",
+  "source_clash": "https://isdo.dpdns.org/fsllistyaml",
   "source_jikun": "https://jikun.zmxoo.xyz/subapi?token=free_13V4wWlMnOxPCGn&placeholder=1&placeholder=2&placeholder=3",
   "source_jikun_extra": "https://jikun.zmxoo.xyz/subapi?token=free_OG0XWCb1RGwDWl0&placeholder=1&placeholder=2&placeholder=3",
   "source_jikun_third": "https://jikun.zmxoo.xyz/subapi?token=free_3yGzINPbgT2HQEp&placeholder=1&placeholder=2&placeholder=3",
@@ -11,8 +11,8 @@
   "retired_sources_count": 6,
   "retired_this_run": [],
   "manual_seed_nodes": 3,
-  "previous_github_nodes": 18,
-  "source_nodes": 19,
+  "previous_github_nodes": 17,
+  "source_nodes": 18,
   "jikun_source_nodes": 0,
   "jikun_clash_proxies": 0,
   "jikun_extra_source_nodes": 0,
@@ -25,12 +25,12 @@
   "mitce_clash_proxies": 0,
   "abyss_source_nodes": 0,
   "abyss_clash_proxies": 0,
-  "filtered_unique": 30,
-  "testable": 16,
+  "filtered_unique": 31,
+  "testable": 18,
   "usable": 8,
   "strict_selected": 8,
-  "grace_retained": 9,
-  "selected": 17,
+  "grace_retained": 6,
+  "selected": 14,
   "test_location": "china-vps-self-hosted",
   "probe_binary": "/opt/china-probe/mihomo",
   "probe_routing_mark": 524288,
@@ -56,14 +56,14 @@
     "JP": 0
   },
   "grace_retained_by_country": {
-    "US": 8,
+    "US": 6,
     "SG": 0,
-    "JP": 1
+    "JP": 0
   },
   "selected_by_country": {
-    "US": 16,
+    "US": 14,
     "SG": 0,
-    "JP": 1
+    "JP": 0
   },
   "quota_if_capped": {
     "US": 8,
@@ -71,9 +71,9 @@
     "JP": 0
   },
   "selected_latency_ms": {
-    "min": 927,
-    "max": 1913,
-    "median": 1373
+    "min": 841,
+    "max": 1509,
+    "median": 1288
   },
-  "generated_at_utc": "2026-11-27T08:37:47Z"
+  "generated_at_utc": "2026-11-27T21:19:35Z"
 }
